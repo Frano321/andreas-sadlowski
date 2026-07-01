@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selbstbestimmt Leben | Andreas Sadlowski</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,500;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #0B1F1C;
+      background: #f3f4f6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, #0B1F1C 0%, #0F766E 100%);
+      padding: 60px 48px;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-family: 'Lora', serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #fff;
+      margin: 0 0 16px;
+    }
+    .hero .subtitle {
+      font-size: 20px;
+      color: #a7f3d0;
+      margin: 0 0 10px;
+      font-style: italic;
+    }
+    .hero .tagline {
+      font-size: 17px;
+      color: #d1fae5;
+      max-width: 680px;
+      margin: 0 auto 36px;
+    }
+    .btn-cta {
+      display: inline-block;
+      background: #F97316;
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-cta:hover { background: #ea6b0e; }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 48px 48px;
+    }
+    section.dark {
+      background: #0B1F1C;
+      color: #E6EEEC;
+    }
+    section.light-teal {
+      background: #f0fdf9;
+    }
+
+    h2.section-title {
+      font-family: 'Lora', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #0F766E;
+      margin: 0 0 24px;
+      line-height: 1.3;
+    }
+    section.dark h2.section-title {
+      color: #5eead4;
+    }
+    h3.sub-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #0F766E;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 24px 0 10px;
+    }
+    section.dark h3.sub-title {
+      color: #F97316;
+    }
+
+    p { margin: 0 0 16px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ===== ARROW LIST ===== */
+    .arrow-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+    }
+    .arrow-list li {
+      position: relative;
+      padding: 8px 0 8px 28px;
+      font-size: 16px;
+      line-height: 1.6;
+      border-bottom: 1px solid #E5E7EB;
+    }
+    section.dark .arrow-list li {
+      border-bottom-color: rgba(255,255,255,0.08);
+    }
+    .arrow-list li::before {
+      content: '\f35b';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #0F766E;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      font-size: 14px;
+    }
+    section.dark .arrow-list li::before {
+      color: #F97316;
+    }
+
+    /* ===== CHECK LIST ===== */
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+    }
+    .check-list li {
+      position: relative;
+      padding: 7px 0 7px 26px;
+      border-bottom: 1px solid #E5E7EB;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .check-list li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #0F766E;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      font-size: 13px;
+    }
+
+    /* ===== CALLOUT ===== */
+    .callout {
+      background: #f0fdf9;
+      border-left: 4px solid #0F766E;
+      padding: 20px 24px;
+      margin: 24px 0;
+      border-radius: 0 4px 4px 0;
+      font-size: 16px;
+    }
+    .callout.dark-callout {
+      background: rgba(15,118,110,0.15);
+      border-left-color: #F97316;
+      color: #E6EEEC;
+    }
+
+    /* ===== QUOTE ===== */
+    .quote-block {
+      border-left: 4px solid #F97316;
+      padding: 16px 24px;
+      margin: 24px 0;
+      background: #fff8f0;
+      font-style: italic;
+      font-size: 17px;
+      color: #0B1F1C;
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* ===== MODULE CARDS ===== */
+    .module-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .module-card {
+      background: #f0fdf9;
+      border: 1px solid #ccfbf1;
+      border-radius: 6px;
+      padding: 24px;
+    }
+    .module-card .module-num {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #F97316;
+      margin-bottom: 6px;
+    }
+    .module-card h4 {
+      font-family: 'Lora', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #0F766E;
+      margin: 0 0 12px;
+      line-height: 1.3;
+    }
+    .module-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .module-card ul li {
+      position: relative;
+      padding: 4px 0 4px 20px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #374151;
+    }
+    .module-card ul li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #0F766E;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      font-size: 11px;
+    }
+
+    /* ===== PRICE BOX ===== */
+    .price-box {
+      background: #0B1F1C;
+      color: #E6EEEC;
+      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .price-box .old-price {
+      font-size: 20px;
+      color: #9ca3af;
+      text-decoration: line-through;
+      margin-bottom: 4px;
+    }
+    .price-box .new-price {
+      font-family: 'Lora', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #F97316;
+      margin: 0 0 8px;
+    }
+    .price-box .price-note {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-bottom: 28px;
+    }
+    .price-box .btn-cta {
+      width: 100%;
+      display: block;
+      font-size: 20px;
+      padding: 18px 36px;
+      margin-bottom: 12px;
+    }
+    .price-box .guarantee {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    /* ===== CONSEQUENCES ===== */
+    .consequence-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .consequence-card {
+      padding: 24px;
+      border-radius: 6px;
+    }
+    .consequence-card.bad {
+      background: #fff1f2;
+      border: 1px solid #fecdd3;
+    }
+    .consequence-card.good {
+      background: #f0fdf9;
+      border: 1px solid #ccfbf1;
+    }
+    .consequence-card h4 {
+      font-family: 'Lora', serif;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+    .consequence-card.bad h4 { color: #be123c; }
+    .consequence-card.good h4 { color: #0F766E; }
+    .consequence-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .consequence-card ul li {
+      position: relative;
+      padding: 5px 0 5px 22px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #1a1a1a;
+    }
+    .consequence-card.bad ul li::before {
+      content: '\f00d';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #be123c;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      font-size: 12px;
+    }
+    .consequence-card.good ul li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #0F766E;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      font-size: 12px;
+    }
+
+    /* ===== DIVIDER ===== */
+    .divider {
+      height: 3px;
+      background: linear-gradient(90deg, #0F766E, #5eead4, #0F766E);
+      margin: 0;
+      border: none;
+    }
+
+    /* ===== CENTER CTA SECTION ===== */
+    .cta-section {
+      text-align: center;
+      padding: 48px 48px;
+    }
+    .cta-section h2 {
+      font-family: 'Lora', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #0F766E;
+      margin: 0 0 16px;
+    }
+    .cta-section p {
+      color: #4b5563;
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #111;
+      padding: 12px 16px;
+      text-align: center;
+    }
+    footer a {
+      color: #9ca3af;
+      font-size: 12px;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+<div class="page-container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div style="display:flex; align-items:center; gap:40px; max-width:860px; margin:0 auto; text-align:left;">
+      <div style="flex:0 0 220px;">
+        <img src="assets/ksg-cover.jpg" alt="Selbstbestimmt Leben Kurs" style="width:220px; height:220px; object-fit:cover; border-radius:8px; box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+      </div>
+      <div style="flex:1;">
+        <h1 style="margin-bottom:12px;">Selbstbestimmt leben – Dein Weg zur höchsten Stufe der Entwicklung</h1>
+        <p class="subtitle" style="margin-bottom:8px;">...Vom Chaos zur Meisterschaft: Wie du die volle Kontrolle über dein Leben erlangst</p>
+        <p class="tagline" style="margin-bottom:28px;">Ein systematischer Weg zu wahrem Persönlichkeitswachstum, innerer Freiheit und der Macht, dein Leben nach deinen Vorstellungen zu gestalten</p>
+        <a href="https://www.digistore24.com/product/640220.html?aff=rheumafrei" class="btn-cta">Jetzt selbstbestimmt leben – Kurs sichern!</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- PROBLEM SECTION -->
+  <section>
+    <h2 class="section-title">Bist du wirklich derjenige, der dein Leben bestimmt?</h2>
+    <p>Oder wirst du von Gedanken, Umständen, Ängsten, Krankheiten und äußeren Kräften geleitet?</p>
+
+    <div class="callout">
+      <strong>Hier ist die harte Wahrheit:</strong>
+    </div>
+
+    <ul class="arrow-list">
+      <li>Solange du deine inneren Elemente nicht ins Gleichgewicht bringst, wirst du <strong>fremdgesteuert</strong>.</li>
+      <li>Deine Gedanken sind <strong>nicht wirklich deine eigenen</strong> – sie wurden von deinem Umfeld, deiner Vergangenheit und unbewussten Kräften geformt, die dich täglich manipulieren.</li>
+      <li>Dein Charakter ist das Resultat von <strong>Prägungen</strong> und Emotionen, die du nie bewusst hinterfragt hast und ist deshalb <strong>unausgeglichen</strong>.</li>
+      <li>Du lebst nicht nach deinem eigenen Willen – sondern nach <strong>Automatismen, Mustern und äußeren Einflüssen</strong>.</li>
+    </ul>
+
+    <p><strong>👉 Selbstbestimmt leben bedeutet, das zu ändern. Endgültig.</strong></p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- PAIN SECTION -->
+  <section class="light-teal">
+    <h2 class="section-title">Die unsichtbare Falle: Warum du leidest, ohne es zu merken – und wie du entkommst</h2>
+
+    <h3 class="sub-title">Mentale Qualen:</h3>
+    <ul class="arrow-list">
+      <li>Deine Gedanken kreisen endlos um Sorgen, Zweifel und Selbstkritik – als wärst du ein <strong>Gefangener in deinem eigenen Kopf</strong>.</li>
+      <li>Du hast 1000 Methoden zur „Gedankenkontrolle" ausprobiert – Meditation, Affirmationen, Visualisierung – aber in der Realität scheinen sie <strong>nicht zu funktionieren</strong>.</li>
+      <li>Du bist ständig überfordert und hast das Gefühl, dein Leben nicht aktiv zu gestalten, sondern nur auf das zu <strong>reagieren</strong>, was geschieht.</li>
+    </ul>
+
+    <h3 class="sub-title">Seelische Blockaden:</h3>
+    <ul class="arrow-list">
+      <li>Du kämpfst mit <strong>alten Mustern</strong>, die dich immer wieder zurückwerfen – toxische Beziehungen, emotionale Ausbrüche oder Machtlosigkeit über sich selbst.</li>
+      <li>Selbst nach Jahren der Persönlichkeitsentwicklung fühlst du dich nicht wirklich erfüllt – als würde dir immer noch ein <strong>entscheidender Schlüssel</strong> fehlen.</li>
+      <li>Deine Emotionen sind nicht im Fluss: Entweder bist du übersensibel oder du fühlst dich abgestumpft und leer. Oder sie <strong>kontrollieren dich</strong> wie eine Marionette.</li>
+    </ul>
+
+    <h3 class="sub-title">Körperliche Folgen:</h3>
+    <ul class="arrow-list">
+      <li>Du hast wenig Energie, bist ständig müde oder kämpfst mit gesundheitlichen Problemen, die Ärzte nicht erklären können.</li>
+      <li>Deine Ernährung, dein Sportprogramm – all die Dinge, die dich angeblich „heilen" sollten – haben dich nicht wirklich auf eine höhere Ebene gebracht.</li>
+      <li>Du spürst eine innere Schwere, als würdest du deinen eigenen Körper mit dir herumschleppen, statt in ihm zu leben.</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <!-- WHY FAILED -->
+  <section>
+    <h2 class="section-title">Du hast ALLES versucht – doch warum bist du immer noch nicht frei?</h2>
+    <p>Du hast bereits so vieles ausprobiert – Meditationen, Achtsamkeitsübungen, Mentaltraining, Persönlichkeitsentwicklungskurse, Coachings oder Seminare. Vielleicht hast du dich auch mit Manifestationstechniken, Visualisierungen und Affirmationen beschäftigt oder deinen Körper durch Biohacking, Ernährung, Fasten und Sportprogramme optimiert.</p>
+    <p>Doch trotz all dieser Ansätze fühlst du dich immer noch, als würdest du auf der Stelle treten. All diese Methoden haben dir vielleicht kleine Fortschritte gebracht, doch sie greifen nicht tief genug. <strong>Denn kein einziges dieser Systeme verbindet die vier Elemente deines Seins in einem wirklich ganzheitlichen Ansatz</strong> – und genau hier liegt die wahre Ursache, warum du noch nicht die Kontrolle über dein Leben erlangt hast.</p>
+
+    <h2 class="section-title" style="margin-top:32px;">Wenn dich meine Bücher bewegt haben, bist du jetzt bereit für die nächste Stufe – und dieser Kurs wird alles verändern.</h2>
+
+    <p>Vielleicht denkst du: <em>„Ich kenne doch schon seine Bücher und seine YouTube-Videos. Was soll ich da noch Neues lernen?"</em></p>
+
+    <p>Aber ich sage dir ganz offen: Was du in meinen Büchern gelesen und in meinen öffentlichen Videos gelernt hast, war <strong>nur die Spitze des Eisbergs</strong>.</p>
+
+    <p>Die wahren Kräfte, die dich innerlich lenken, die tiefsten Schichten deines Seins – all das bleibt dir in den Büchern verborgen.</p>
+
+    <p><strong>Dieser Videokurs führt dich dorthin, wo du bisher noch nie warst.</strong></p>
+
+    <p>Hier geht es um das Wissen, das an den <strong>Grundfesten deiner Identität rüttelt</strong> – und ich verspreche dir: Es wird dich tief berühren!</p>
+
+    <p>Ja, <strong>die Bücher sind der Anfang, sie sind das Fundament.</strong> Aber <strong>dieser Kurs baut das Schloss auf dieses Fundament.</strong></p>
+
+    <p>Hier geht es nicht um schöne Theorien. Hier geht es darum, die Schleier zu lüften, die dich von deinem wahren Leben trennen.</p>
+
+    <p><strong>Wenn du den Mut hast, an die Wurzel zu gehen, wirst du in diesem Kurs das Wissen finden, das dein Leben ein für alle Mal verändern kann.</strong></p>
+
+    <p>Und ich verspreche dir: <strong>Danach wirst du nie wieder derselbe Mensch sein, der du vorher warst.</strong></p>
+
+    <div class="quote-block">
+      „Andreas, ich bin allein durchs Anschauen des Kurses von all meinen Problemen und sogar von körperlichen Schmerzen geheilt worden. Diese Wahrheit hat mich frei gemacht!"
+      <br><em>— Kursteilnehmer</em>
+    </div>
+
+    <div class="callout">
+      <strong>Für wen ist dieser Kurs nicht geeignet?</strong><br>
+      Für alle, die bereits Schwierigkeiten hatten, den Büchern „Dekonstruktion im Menschen" oder „Entfessle die Kraft deiner Träume" zu folgen – oder die darin nicht einmal ansatzweise Begeisterung gefunden haben. Denn dieser Kurs geht noch viel tiefer.
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- WHAT IS SELF-DETERMINATION -->
+  <section class="dark">
+    <h2 class="section-title">Der wahre Schlüssel zur Freiheit: Was dir niemand über Selbstbestimmung gesagt hat</h2>
+    <p>Selbstbestimmt zu leben bedeutet nicht nur, Wünsche zu erfüllen – es bedeutet, der Architekt deines Lebens zu werden.</p>
+    <p>Jeder große Meister, jeder wahre Weise hat es verstanden: Wer seine inneren Kräfte nicht kontrolliert, ist ein Gefangener der äußeren Welt.</p>
+
+    <p><strong>Selbstbestimmt leben heißt:</strong></p>
+    <ul class="check-list" style="border-top: 1px solid rgba(255,255,255,0.08);">
+      <li style="border-bottom-color: rgba(255,255,255,0.08); color: #E6EEEC;"><strong>Seine Gedanken selbst bestimmen</strong> – anstatt von Angst, Zweifeln und äußeren Reizen gelenkt zu werden.</li>
+      <li style="border-bottom-color: rgba(255,255,255,0.08); color: #E6EEEC;"><strong>Seinen Charakter bewusst formen</strong> – anstatt von Emotionen, Mustern und alten Prägungen beherrscht zu werden.</li>
+      <li style="border-bottom-color: rgba(255,255,255,0.08); color: #E6EEEC;"><strong>Sein Leben aktiv lenken</strong> – frei bestimmen, wo man lebt, mit wem man lebt und wie man leben möchte.</li>
+      <li style="border-bottom-color: rgba(255,255,255,0.08); color: #E6EEEC;"><strong>Seine Seele und seine mentalen Substanzen erhöhen</strong> – und eine höhere Stufe des Seins erreichen.</li>
+    </ul>
+
+    <h3 class="sub-title" style="margin-top: 32px;">Die schockierende Wahrheit: Warum 99% der Menschen nie echte Freiheit erreichen</h3>
+    <ul class="arrow-list">
+      <li style="color: #E6EEEC;">Weil sie nie die 4 Elemente in sich ausgleichen. Körper, Seele und Geist sind aus dem Gleichgewicht – das führt zu Chaos, Leid und Fremdbestimmung.</li>
+      <li style="color: #E6EEEC;">Weil sie glauben, ihr Leben sei „Zufall" oder „Schicksal". Dabei ist es nur die Summe unbewusster Muster.</li>
+      <li style="color: #E6EEEC;">Weil sie sich mit den falschen Fragen beschäftigen. Sie suchen nach kurzfristigen Erfolgen, aber ignorieren die fundamentalen Gesetze ihres eigenen Seins.</li>
+    </ul>
+
+    <p style="color: #5eead4; font-weight: 700; font-size: 17px;">👉 Selbstbestimmt leben heißt: sich ein Himmelreich auf Erden aufbauen – genau wie es bereits Jesus lehrte.</p>
+
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="https://www.digistore24.com/product/640220.html?aff=rheumafrei" class="btn-cta">Jetzt Zugang sichern!</a>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- MODULES -->
+  <section>
+    <h2 class="section-title">Was dich im Video-Kurs erwartet – Die systematische Entwicklung zur wahren Freiheit</h2>
+
+    <div class="module-grid">
+      <div class="module-card">
+        <div class="module-num">Modul 1</div>
+        <h4>Einführung &amp; Fundament: Die verborgenen Gesetze der Selbstbestimmung</h4>
+        <ul>
+          <li>Die vier Elemente als Grundlage deines Lebens – und warum sie aus dem Gleichgewicht geraten sind</li>
+          <li>Die verborgenen Mechanismen, die dich bisher unbewusst gesteuert haben</li>
+          <li>Wissenschaft und uraltes Wissen: Wie du dein Bewusstsein erweiterst</li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <div class="module-num">Modul 2</div>
+        <h4>Körper: Deine physische Basis für ein freies Leben</h4>
+        <ul>
+          <li>Warum dein Körper dich in einer niederen Existenz gefangen hält, wenn du ihn nicht reinigst</li>
+          <li>Organreinigungen, um Fremdsteuerung durch Blockaden aufzulösen (Leber, Verdauung, Nieren)</li>
+          <li>Ernährung &amp; Bewegung als Brücke zur Bewusstseinserweiterung</li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <div class="module-num">Modul 3</div>
+        <h4>Seele: Wie du emotionale und mentale Fremdbestimmung auflöst</h4>
+        <ul>
+          <li>Die dunklen Seiten deiner Seele – die unbewussten Kräfte, die dich steuern</li>
+          <li>Der Seelenspiegel: Die tiefste Selbstanalyse, die du je gemacht hast</li>
+          <li>Charakterformung als bewusster Prozess – nicht als zufällige Entwicklung</li>
+          <li>Die verborgene Macht der Sexualität und ihre Rolle in deiner Entwicklung</li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <div class="module-num">Modul 4</div>
+        <h4>Geist: Die ultimative Kontrolle über dein Bewusstsein</h4>
+        <ul>
+          <li>Deine Gedanken sind nicht deine eigenen – lerne, sie wirklich zu beherrschen</li>
+          <li>Mentales Karma: Warum dein Geist dein Schicksal erschafft</li>
+          <li>Die Gefahr falscher Glaubenssysteme – und wie du den echten Zugang zur Wahrheit findest</li>
+          <li>Die Schlüssel-Techniken für absolute Kontrolle deiner Gedanken, Emotionen und Handlungen</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- COST OF INACTION -->
+  <section class="light-teal">
+    <h2 class="section-title">Was es dich kostet, wenn du jetzt nicht handelst – und warum du diese Chance nicht verpassen darfst</h2>
+
+    <p><strong>Wie viel Geld hast du schon für die falschen Lösungen verschwendet?</strong></p>
+    <p>Hast du jemals ausgerechnet, wie viel du bereits investiert hast – in Bücher, Kurse, Seminare oder Techniken, die dir versprochen haben, dein Leben zu verändern? Wahrscheinlich sind es Hunderte, wenn nicht Tausende von Euro. Doch bist du wirklich dort angekommen, wo du hin willst?</p>
+    <p><strong>Wie oft hast du 400 Euro oder mehr für Dinge ausgegeben, die dir nichts gebracht haben?</strong></p>
+
+    <ul class="arrow-list">
+      <li>Eine neue Ernährungsweise, die du nicht durchgezogen hast</li>
+      <li>Ein Coaching, das nur an der Oberfläche gekratzt hat</li>
+      <li>Teure Supplements, um deine Energie zu steigern, die aber nichts Grundlegendes verändert haben</li>
+      <li>Ein weiteres Buch, das im Regal verstaubt</li>
+      <li>Ein Seminar, nach dem du motiviert warst – aber nach zwei Wochen war alles wieder beim Alten</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Fehlendes Wissen kostet dich mehr, als du denkst.</strong><br>
+      Jede falsche Entscheidung, jedes Jahr, das vergeht, während du immer noch nach der Lösung suchst, kostet dich nicht nur Geld – es kostet dich Lebenszeit. Es kostet dich den Erfolg, die Freiheit, die emotionale und mentale Klarheit, die du längst haben könntest.
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- PRICE -->
+  <section>
+    <h2 class="section-title" style="text-align: center;">Warum dieser Kurs 1.199 € kostet – und warum er jeden Cent wert ist</h2>
+    <p style="text-align: center; color: #4b5563; max-width: 680px; margin: 0 auto 32px;">Denk einmal kurz darüber nach: Was wäre es dir wert, wenn du ab heute die volle Kontrolle über dein Leben hättest? Genau das haben frühere Teilnehmer für 1.199 € erhalten – und sie sagen, es war die beste Investition ihres Lebens.</p>
+
+    <p style="text-align: center; color: #4b5563; max-width: 680px; margin: 0 auto 32px;">Darum bekommst du den Kurs nicht für 999 €, nicht für 799 € – nicht einmal für 599 €. Für genau <strong>7 Tage</strong> hast du die Möglichkeit, ihn für nur <strong>397 €</strong> zu sichern. Aber sei dir bewusst: Danach wird der Preis wieder steigen.</p>
+
+    <div class="price-box">
+      <div class="old-price">Normalpreis: 1.199 €</div>
+      <div class="new-price">397 €</div>
+      <div class="price-note">⚠️ Nur für 7 Tage – danach steigt der Preis wieder</div>
+      <a href="https://www.digistore24.com/product/640220.html?aff=rheumafrei" class="btn-cta">Jetzt für 397 € buchen – nur für 7 Tage!</a>
+      <div class="guarantee" style="margin-top: 16px; color: #9ca3af;">🚀 Triff jetzt eine Entscheidung für deine Zukunft – oder zahle weiter den Preis für Stillstand.</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- CONSEQUENCES -->
+  <section class="dark">
+    <h2 class="section-title">Was passiert, wenn du jetzt NICHT handelst?</h2>
+
+    <div class="consequence-grid">
+      <div class="consequence-card bad">
+        <h4>❌ Ohne den Kurs</h4>
+        <ul>
+          <li>Du bleibst Sklave deiner eigenen unbewussten Muster – ohne jemals wirklich frei zu sein.</li>
+          <li>Du kämpfst weiter mit den gleichen Problemen und emotionalen Wunden, die dich jeden Tag quälen.</li>
+          <li>Du verlierst weitere Jahre an unnötiges Leid und verpasst die Chance, endlich dein Leben zu leben.</li>
+          <li>Du verzichtest bewusst auf das größte Glück, das ein Mensch erfahren kann: Absolute Selbstbestimmung.</li>
+        </ul>
+      </div>
+      <div class="consequence-card good">
+        <h4>✅ Mit dem Kurs</h4>
+        <ul>
+          <li>Du übernimmst die volle Kontrolle über Gedanken, Emotionen und Handlungen.</li>
+          <li>Du löst alte Muster auf und wirst endlich frei von inneren Zwängen.</li>
+          <li>Du baust dir das Leben auf, das du wirklich leben möchtest.</li>
+          <li>Du erreichst die höchste Stufe der persönlichen Entwicklung: Absolute Selbstbestimmung.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 32px; font-size: 17px; color: #5eead4;"><strong>Es ist deine Entscheidung.</strong> Die Macht, dein Leben radikal zu verändern, liegt genau JETZT vor dir. Nutze sie – oder bereue später, es nicht getan zu haben.</p>
+
+    <div style="text-align: center; margin-top: 28px;">
+      <a href="https://www.digistore24.com/product/640220.html?aff=rheumafrei" class="btn-cta" style="font-size: 20px; padding: 18px 40px;">Jetzt selbstbestimmt leben – Kurs sichern!</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="/impressum/">Impressum</a>
+    <a href="/datenschutz/">Datenschutz</a>
+    <a href="/haftungsausschluss/">Haftungsausschluss</a>
+    <a href="/agb/">AGBs</a>
+  </footer>
+
+</div>
+</body>
+</html>

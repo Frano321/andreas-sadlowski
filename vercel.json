@@ -1,0 +1,21 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/101", "destination": "https://youtu.be/PaaKhcyTses", "permanent": true },
+    { "source": "/102", "destination": "https://www.youtube.com/watch?v=WQ-Gr7xPwow", "permanent": true },
+    { "source": "/103", "destination": "https://www.youtube.com/watch?v=qyGsne1lwEI", "permanent": true },
+    { "source": "/104", "destination": "https://www.youtube.com/watch?v=nF5pBlYZRfo", "permanent": true },
+    { "source": "/105", "destination": "/wunscherfuellung", "permanent": true },
+    { "source": "/106", "destination": "https://www.schmerzfrei24.com", "permanent": true },
+    { "source": "/deko", "destination": "https://www.rheumafrei.de/bestellen", "permanent": true }
+  ]
+}

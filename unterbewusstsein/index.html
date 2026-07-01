@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Die Gesetze der wahren Wunscherfüllung | Andreas Sadlowski</title>
+  <meta name="keywords" content="murphy die macht des unterbewusstseins">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,500;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #1a1a1a;
+      background: #f3f4f6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3 { font-family: 'Lora', serif; line-height: 1.3; }
+    p { margin: 0 0 18px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* SECTIONS */
+    .sec {
+      padding: 44px 64px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .sec:last-of-type { border-bottom: none; }
+
+    .sec-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #0F766E;
+      margin: 0 0 20px;
+    }
+    .sec-sub {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0B1F1C;
+      margin: 28px 0 12px;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 52px 64px 36px;
+      border-bottom: 3px solid #0F766E;
+    }
+    .hero-eyebrow {
+      font-family: 'Lora', serif;
+      font-size: 40px;
+      font-weight: 700;
+      color: #0F766E;
+      margin: 0 0 8px;
+      line-height: 1.25;
+    }
+    .hero-subtitle {
+      font-family: 'Lora', serif;
+      font-size: 30px;
+      font-weight: 500;
+      font-style: italic;
+      color: #374151;
+      margin: 0 0 28px;
+    }
+
+    /* CTA BUTTON */
+    .cta-wrap {
+      text-align: center;
+      margin: 32px 0 8px;
+    }
+    .btn {
+      display: inline-block;
+      background: #F97316;
+      color: #fff;
+      padding: 16px 52px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 20px;
+      text-decoration: none;
+      line-height: 1.25;
+    }
+    .btn:hover { background: #ea6b0e; }
+    .btn-sub {
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-top: 4px;
+    }
+
+    /* CALLOUT */
+    .callout {
+      background: #f0fdf9;
+      border-left: 4px solid #0F766E;
+      padding: 18px 22px;
+      margin: 24px 0;
+      border-radius: 0 4px 4px 0;
+      font-size: 17px;
+      font-style: italic;
+      color: #0B1F1C;
+    }
+
+    /* CHECK LIST */
+    .clist {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 20px;
+    }
+    .clist li {
+      position: relative;
+      padding: 8px 0 8px 28px;
+      border-bottom: 1px solid #E5E7EB;
+      font-size: 16px;
+    }
+    .clist li:last-child { border-bottom: none; }
+    .clist li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #0F766E;
+      position: absolute;
+      left: 0;
+      top: 11px;
+      font-size: 13px;
+    }
+
+    /* 2-COLUMN IMAGE LAYOUT */
+    .two-col {
+      display: flex;
+      gap: 44px;
+      align-items: flex-start;
+    }
+    .two-col-text { flex: 1; }
+    .two-col-img {
+      flex: 0 0 auto;
+      text-align: center;
+    }
+    .two-col-img img {
+      border-radius: 6px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+      display: block;
+    }
+
+    /* SUCCESS STORIES */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 24px 0;
+    }
+    .story-card {
+      background: #f0fdf9;
+      border: 1px solid #ccfbf1;
+      border-radius: 8px;
+      padding: 22px;
+    }
+    .story-card h4 {
+      font-family: 'Lora', serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #0F766E;
+      margin: 0 0 10px;
+    }
+    .story-card p {
+      font-size: 15px;
+      color: #374151;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* CHAPTER BLOCK */
+    .chapter {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 24px;
+      margin: 16px 0;
+    }
+    .chapter h4 {
+      font-family: 'Lora', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #0F766E;
+      margin: 0 0 12px;
+    }
+    .chapter ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .chapter ul li {
+      position: relative;
+      padding: 4px 0 4px 20px;
+      font-size: 15px;
+      color: #374151;
+    }
+    .chapter ul li::before {
+      content: '▸';
+      color: #F97316;
+      position: absolute;
+      left: 0;
+    }
+
+    /* PRICE SECTION */
+    .price-sec {
+      background: #0B1F1C;
+      padding: 52px 64px;
+      text-align: center;
+      color: #E6EEEC;
+    }
+    .price-sec h2 {
+      font-family: 'Lora', serif;
+      font-size: 26px;
+      color: #5eead4;
+      margin: 0 0 16px;
+    }
+    .price-amount {
+      font-family: 'Lora', serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: #F97316;
+      margin: 0 0 6px;
+      line-height: 1;
+    }
+    .price-note {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-bottom: 28px;
+    }
+    .price-sec p {
+      color: #9ca3af;
+      max-width: 640px;
+      margin: 0 auto 28px;
+      font-size: 15px;
+    }
+    .price-sec .btn-dark {
+      display: inline-block;
+      background: #F97316;
+      color: #fff;
+      padding: 18px 52px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 20px;
+      text-decoration: none;
+      line-height: 1.25;
+    }
+    .price-sec .btn-dark:hover { background: #ea6b0e; }
+
+    /* FOOTER */
+    footer {
+      background: #141414;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    footer a {
+      color: rgba(255,255,255,0.4);
+      font-size: 13px;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover { color: #fff; }
+
+    hr.divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <h1 class="hero-eyebrow">„Willkommen auf Deiner Reise zur unendlichen Macht Deines Unterbewusstseins…</h1>
+    <p class="hero-subtitle">…einer Reise jenseits von Murphy"</p>
+    <p style="font-size:20px; font-weight:700; color:#F97316; letter-spacing:0.04em; margin:0 0 28px;">Ehrlich. Ermutigend. Lebensverändernd.</p>
+    <p>Hallo, ich bin Andreas Sadlowski, und ich möchte dich einladen, mit mir eine Reise anzutreten, die dich an Orte deines Geistes und deiner Seele führen wird, von denen du bisher nicht zu träumen gewagt hast.</p>
+    <p>Wenn du hier bist, dann weil du gespürt hast, dass da mehr ist – mehr zu dir, zu deinen Träumen, zu dem, was möglich ist. Vielleicht hast du schon von Murphy und der Macht des Unterbewusstseins gehört. Aber was, wenn ich dir sage, dass es Geheimnisse gibt, die noch tiefer liegen?</p>
+    <div class="callout">Geheimnisse, die Murphy dir nicht verraten hat.</div>
+    <p>Es ist kein Zufall, dass du hier bist. Du stehst am Anfang einer Reise, die nicht nur dein Verständnis von der Welt, sondern auch dein gesamtes Leben von Grund auf verändern wird.</p>
+    <p>„Die Gesetze der wahren Wunscherfüllung" ist nicht nur ein Buch; es ist der Schlüssel zu einer verborgenen Tür in deinem Inneren, hinter der sich unermessliche Schätze verbergen. Willkommen zu einer Reise, die dich zurück zu dir selbst führt, zu deiner wahren Macht und deinem unendlichen Potenzial.</p>
+    <!-- Button 1 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 1: Das Abenteuer + Bild buch-klein ===== -->
+  <div class="sec">
+    <div class="two-col">
+      <div class="two-col-text">
+        <h2 class="sec-title">Die Macht, die in Dir schlummert</h2>
+        <p>Ich möchte dich herzlich willkommen heißen auf diesem Weg, der dich tiefer in die Geheimnisse deines eigenen Geistes führen wird, als du es dir je vorgestellt hast. Stell dir vor, tief in dir schlummert eine Quelle unendlicher Energie, Kreativität und Macht. Diese Quelle ist dein Unterbewusstsein.</p>
+        <p>Bis jetzt war es vielleicht ein stiller Begleiter auf deinem Lebensweg, aber es ist an der Zeit, es zu wecken und zu deinem mächtigsten Verbündeten zu machen.</p>
+        <p>Über die Jahre habe ich unzählige Stunden damit verbracht, die Tiefen des Unterbewusstseins zu erforschen. Ich habe mich durch antike Schriften gewühlt, moderne Psychologie studiert und Experimente gewagt, die viele für unmöglich gehalten hätten.</p>
+        <div class="callout">Was ich gefunden habe, war atemberaubend: Die Kraft unseres Unterbewusstseins ist der Schlüssel zu jedem Erfolg und jeder Erfüllung, die wir im Leben suchen.</div>
+        <p>Willkommen zu dem Abenteuer, das dein Leben verändern wird. Eine Reise zu dir selbst, zu deiner unendlichen Macht.</p>
+      </div>
+      <div class="two-col-img">
+        <img src="assets/buch-klein.jpg" alt="Die Gesetze der wahren Wunscherfüllung" width="280">
+      </div>
+    </div>
+    <!-- Button 2 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 2: Warum dieses Buch kein gewöhnliches Buch ist ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Warum dieses Buch kein gewöhnliches Buch ist</h2>
+    <p>„Die Gesetze der wahren Wunscherfüllung" ist die Destillation meiner lebenslangen Suche nach der tiefsten Wahrheit über die menschliche Erfahrung. Es ist das Ergebnis von Jahren intensiver Forschung, persönlicher Erfahrungen und tiefer Meditation.</p>
+
+    <h3 class="sec-sub">Ein Blick hinter den Schleier – Was Murphy dir nicht gesagt hat</h3>
+    <p>Joseph Murphy hat uns mit „Die Macht Ihres Unterbewusstseins" eine Tür geöffnet. Aber diese Tür führt in einen Flur – und der Flur hat viele weitere Türen, die Murphy uns nicht gezeigt hat. In diesem Buch nehme ich dich mit durch diese Türen, in Räume deines Geistes, die du noch nie betreten hast.</p>
+    <p>Die Antworten, die ich gefunden habe, lagen hinter Schleiern dessen, was wir für möglich halten. „Die Gesetze der wahren Wunscherfüllung" ist mehr als ein Buch; es ist ein Wegweiser zu den tiefsten Geheimnissen des Universums, niedergeschrieben speziell für dich.</p>
+    <!-- Button 3 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 3: Dein erster Schritt ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Dein erster Schritt in ein grenzenloses Leben</h2>
+    <p>Ich lade dich ein, mit mir auf diese Reise der Transformation zu gehen. Mit dem ersten Wort dieses Buches beginnen wir gemeinsam.</p>
+    <p>Das Buch ist eine Einladung, über deine selbst gesetzten Grenzen hinauszuwachsen – Grenzen, von denen du vielleicht nicht einmal wusstest, dass du sie hast.</p>
+    <p>Schritt für Schritt werde ich dich durch tiefe Einblicke und praktische Übungen führen. Entdecke die vollkommene Freiheit, die bereits in dir wartet.</p>
+    <p>Der Prozess mag herausfordernd sein, aber die Belohnungen sind es wert. Jeder Schritt wird es wert sein. Lass uns gemeinsam die ersten Schritte in ein grenzenloses Leben gehen.</p>
+    <!-- Button 4 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 4: Erschaffe deine Realität neu ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Erschaffe Deine Realität neu</h2>
+    <p>Stell dir dein Leben als eine leere Leinwand vor. Du bist der Künstler. Jeder Pinselstrich ist eine Entscheidung, jede Farbe eine Emotion, und das Endergebnis – dein Meisterwerk – ist dein gelebtes Leben.</p>
+    <p><strong>Der erste Pinselstrich:</strong> Verstehe deine Macht. Bevor du malen kannst, musst du wissen, dass du der Maler bist. Erkenne deine Fähigkeit, deine eigene Realität zu gestalten.</p>
+    <p><strong>Die Farben wählen:</strong> Programmiere dein Unterbewusstsein mit einer klaren Vision. Wähle bewusst die Überzeugungen, Gedanken und Emotionen, die dein Meisterwerk formen.</p>
+    <p><strong>Das Meisterwerk schaffen:</strong> Meistere die Kunst der Visualisierung. Lerne, deine Wünsche so lebhaft und detailliert zu visualisieren, dass dein Unterbewusstsein keinen Unterschied mehr zwischen Vision und Realität erkennt.</p>
+    <p><strong>Dein Lebensbild rahmen:</strong> Tägliche Praxis ist dein Rahmen. Jeder Tag bringt neue Möglichkeiten, dein Meisterwerk zu verfeinern.</p>
+    <p><strong>Die Ausstellung deines Lebens:</strong> Durch die konsequente Anwendung dieser Prinzipien verwandeln sich Hindernisse in Möglichkeiten. Jeder Tag wird zur Ausstellung deiner inneren Stärke.</p>
+    <p>Bist du bereit, den Pinsel zu ergreifen? Deine Zeit ist jetzt.</p>
+    <!-- Button 5 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 5: Die Wahrheit über Wunscherfüllung ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Die Wahrheit über wahre Wunscherfüllung</h2>
+    <p>Es gibt ein tiefes Missverständnis über Wunscherfüllung, das die meisten Menschen ihr Leben lang begleitet. Sie denken, dass es ausreicht, sich etwas zu wünschen, es zu visualisieren oder positiv zu denken. Aber das ist nur die Oberfläche.</p>
+    <p>Die Wahrheit ist: Wünsche zu visualisieren und zu affirmieren ist nur ein Teil des Prozesses. Echte Veränderung erfordert auch Handlung, und vor allem das richtige Fundament in deinem Unterbewusstsein. Ohne dieses Fundament werden Visualisierungen und Affirmationen wie Samen auf steinigem Boden – sie können nicht gedeihen.</p>
+
+    <ul class="clist">
+      <li>Tiefe Ängste und limitierende Überzeugungen erkennst und auflöst</li>
+      <li>Dein Unterbewusstsein mit klaren, kraftvollen Botschaften programmierst</li>
+      <li>Die Kunst der Visualisierung meisterst, um deine Ziele zu manifestieren</li>
+      <li>Eine tiefe Verbindung zu deiner inneren Weisheit herstellst</li>
+      <li>Im Einklang mit den universellen Gesetzen handelst</li>
+    </ul>
+
+    <div class="callout">Du bist der Schöpfer deiner Realität. Dein Unterbewusstsein ist ein Feld, das darauf wartet, mit deinen Gedanken, Überzeugungen und Emotionen bepflanzt zu werden.</div>
+
+    <!-- Button 6 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 6: Erfolgsgeschichten ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Echte Menschen, echte Veränderungen</h2>
+    <p>Ich weiß, was du vielleicht denkst: „Das klingt alles schön, aber funktioniert das wirklich?" Lass mich dir einige Geschichten erzählen, die von echten Menschen stammen.</p>
+
+    <div class="story-grid">
+      <div class="story-card">
+        <h4>Marias Geschichte – Der Neustart</h4>
+        <p>Maria stand nach einer Scheidung und dem Verlust ihres Jobs vor dem Nichts. Voller Selbstzweifel begann sie, die Prinzipien dieses Buches anzuwenden. Heute ist sie erfolgreiche Unternehmerin.</p>
+      </div>
+      <div class="story-card">
+        <h4>Julias Geschichte – Heilung durch innere Kraft</h4>
+        <p>Julia litt jahrelang unter einer Autoimmunerkrankung. Durch Visualisierungen und Affirmationen aus diesem Buch verschwanden ihre Symptome. Heute erlebt sie volle Gesundheit und Vitalität.</p>
+      </div>
+      <div class="story-card">
+        <h4>Lukas' Geschichte – Liebe &amp; Beziehungen</h4>
+        <p>Lukas fühlte sich in der Liebe immer unglücklich. Durch die Umprogrammierung seines Unterbewusstseins zog er einen Partner an, der seine Kernwerte teilt.</p>
+      </div>
+      <div class="story-card">
+        <h4>Mias Geschichte – Innerer Frieden</h4>
+        <p>Mia fühlte sich im hektischen Alltag verloren. Durch Stille und Meditation lernte sie, sich mit ihrem Unterbewusstsein zu verbinden. Heute fühlt sie sich ruhig und zufrieden.</p>
+      </div>
+      <div class="story-card">
+        <h4>Erics Geschichte – Beruflicher Erfolg</h4>
+        <p>Eric träumte davon, sein eigener Chef zu sein. Angst hielt ihn zurück. Mit den Werkzeugen dieses Buches baute er innerhalb eines Jahres ein erfolgreiches Unternehmen auf.</p>
+      </div>
+      <div class="story-card">
+        <h4>Toms Geschichte – Der Bestsellerautor</h4>
+        <p>Tom träumte von einer Karriere als Schriftsteller. Er programmierte sein Unterbewusstsein um und veröffentlichte seinen ersten Roman – der zum Bestseller wurde.</p>
+      </div>
+    </div>
+
+    <!-- Button 7 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 7: Barrieren durchbrechen ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Barrieren durchbrechen – Dein Weg zur Freiheit</h2>
+    <p>Was wäre möglich, wenn du über deine selbst gesetzten Grenzen hinausgehen könntest? Diese Grenzen bestehen aus Zweifel, Angst und alten Überzeugungen – Mauern, die du selbst gebaut hast. Es ist Zeit, sie einzureißen.</p>
+    <p>In diesem Kapitel wirst du lernen, wie du diese Barrieren erkennst und überwindest. Du wirst entdecken, wie tief sie in deinem Unterbewusstsein verankert sind und wie du sie mit sanfter, aber unaufhaltsamer Kraft auflösen kannst.</p>
+
+    <ul class="clist">
+      <li><strong>Befreiende Strategien</strong> – Hindernisse erkennen und Ängste konfrontieren</li>
+      <li><strong>Das Leben neu gestalten</strong> – Alte Geschichten umschreiben und Autor deines eigenen Lebens werden</li>
+      <li><strong>Selbstwahrnehmung transformieren</strong> – Weg von limitierenden Mustern hin zu Stärke</li>
+    </ul>
+
+    <p>„Barrieren durchbrechen" ist mehr als ein Kapitel; es ist ein Leuchtfeuer der Hoffnung für jeden, der in den Fesseln seiner eigenen Überzeugungen gefangen ist.</p>
+    <!-- Button 8 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 8: Die Rolle des Unterbewusstseins ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Die Rolle des Unterbewusstseins</h2>
+    <p>Ein tiefes Verständnis der Rolle des Unterbewusstseins in der Wunscherfüllung. Dein Unterbewusstsein spricht die Sprache der Bilder, Emotionen und tiefen Überzeugungen – und dirigiert deine Realität wie ein Orchester.</p>
+
+    <ul class="clist">
+      <li><strong>Das verborgene Universum in dir</strong> – Entdecke, wie mächtig dein Unterbewusstsein wirklich ist</li>
+      <li><strong>Für Erfolg programmieren</strong> – Ersetze alte Programme durch ermächtigende neue</li>
+      <li><strong>Bündnis mit dem Universum</strong> – Entfalte dein volles Potenzial und aktiviere das Gesetz der Anziehung</li>
+      <li><strong>Entdecke die wartende Kraft</strong> – Sie ist in dir, du musst sie nur wecken</li>
+    </ul>
+
+    <p>„Die Rolle des Unterbewusstseins" ist mehr als nur ein Kapitel – es ist eine Reise zur tiefsten Quelle deiner Macht, eine Einladung, das mächtigste Werkzeug zu meistern, das du je besitzen wirst.</p>
+    <!-- Button 9 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 9: Praktische Anleitungen ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Praktische Anleitungen und Übungen</h2>
+
+    <div class="chapter">
+      <h4>Kapitel 1: Die Grundlagen der Wunscherfüllung</h4>
+      <ul>
+        <li>Die Macht des Glaubens</li>
+        <li>Die Rolle des Unterbewusstseins</li>
+        <li>Die Sprache der Visualisierung</li>
+        <li>Affirmationen: Worte, die Welten erschaffen</li>
+        <li>Handeln in Harmonie</li>
+      </ul>
+    </div>
+
+    <h3 class="sec-sub">Visualisierungstechniken: Dein Schlüssel zum Erfolg</h3>
+    <p>Häufige Fehler sind vage Ziele, fehlende emotionale Verbindung und unregelmäßige Praxis. Dieses Buch führt dich durch das Labyrinth:</p>
+    <ul class="clist">
+      <li>Die Macht der Präzision – detaillierte sensorische Erfahrungen sind entscheidend</li>
+      <li>Über die Grenzen der Vorstellungskraft – nutze deine volle sensorische Bandbreite</li>
+      <li>Wie du die Kraft deiner Visionen entfesselst</li>
+    </ul>
+
+    <h3 class="sec-sub">Affirmationen: Die Macht der Worte</h3>
+    <ul class="clist">
+      <li>Das Unterbewusstsein umprogrammieren – den Garten deiner Überzeugungen neu bepflanzen</li>
+      <li>Die Kunst der positiven Programmierung meistern</li>
+      <li>Deine Worte, dein Schicksal</li>
+    </ul>
+
+    <h3 class="sec-sub">Die tägliche Praxis</h3>
+    <ul class="clist">
+      <li>Morgenrituale für einen kraftvollen Start</li>
+      <li>Abendreflexionen für tiefere Verarbeitung</li>
+      <li>Die Kunst des bewussten Lebens – Präsenz und Achtsamkeit in jedem Moment</li>
+    </ul>
+
+    <p>Dieser Teil von „Die Gesetze der wahren Wunscherfüllung" ist nicht nur ein Kapitel – es ist dein Wegweiser zu einem Leben, das du dir wirklich wünschst.</p>
+    <!-- Button 10 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 10: Aktionsplan ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Dein persönlicher Aktionsplan</h2>
+    <p>Stell dir vor, du hältst eine Karte zu deinen Träumen in den Händen – einen persönlichen Aktionsplan, der genau auf deine Ziele zugeschnitten ist.</p>
+    <ul class="clist">
+      <li><strong>Vom Traum zur Realität</strong> – Die Reise vom Wunsch zur greifbaren Realität</li>
+      <li><strong>Ziele klar definieren</strong> – Prioritäten setzen, Meilensteine festlegen</li>
+      <li><strong>Tägliche Routinen entwickeln</strong> – Unterstützend für deine Ziele</li>
+      <li><strong>Fehler vermeiden</strong> – Klarheit sicherstellen, Überforderung verhindern</li>
+    </ul>
+    <p>Deine Reise zu einem grenzenlosen Leben beginnt jetzt. Nicht morgen, nicht irgendwann – jetzt. Bist du bereit, den ersten Schritt zu machen?</p>
+    <!-- Button 11 -->
+    <div class="cta-wrap">
+      <a href="https://www.digistore24.com/product/536103" class="btn" target="_blank" rel="noopener noreferrer">
+        Jetzt sichern
+        <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 11: Einladung + buch-gross ===== -->
+  <div class="sec">
+    <div class="two-col">
+      <div class="two-col-text">
+        <h2 class="sec-title">Die Einladung geht weiter</h2>
+        <p>Die Transformation endet nicht mit dem letzten Kapitel. Du wirst durch Community, Online-Plattformen, Workshops und weiterführende Programme begleitet.</p>
+        <p>Das Universum ist reich an Möglichkeiten. Dein grenzenloses Potenzial, deine Träume – alles ist in Reichweite. Jeder Schritt bringt dich deiner wahren Bestimmung näher.</p>
+        <p>„Die Gesetze der wahren Wunscherfüllung" warten darauf, dir den Weg zu zeigen. Die Schlüssel zum Königreich deines eigenen Geistes, zu einem Leben voller Fülle, Freude und Erfüllung – du hältst sie bereits in deinen Händen.</p>
+      </div>
+      <div class="two-col-img">
+        <img src="assets/buch-gross.jpg" alt="Die Gesetze der wahren Wunscherfüllung – Buchcover" width="200">
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== ABSCHNITT 12: Letzter Aufruf ===== -->
+  <div class="sec">
+    <h2 class="sec-title">Es ist Zeit – Sprenge Deine Fesseln</h2>
+    <p>Es ist Zeit, dass du die Fesseln sprengst, die dich zurückhalten. Die Fesseln der Angst, des Zweifels und der selbst gesetzten Grenzen. Du hast die Kraft dazu, und dieses Buch ist dein Werkzeug.</p>
+
+    <div class="callout">Warum gebe ich das höchste Wissen so günstig ab, für das mich nicht wenige Milliardäre hassen werden? Darüber möchte ich mein Schweigen bewahren – denn damit erfüllt sich mein eigener Wunsch, den ich seit vielen Jahren in mir trage.</div>
+
+    <p style="text-align:center; margin-top:24px;">
+      <a href="https://www.digistore24.com/product/536103" target="_blank" rel="noopener noreferrer" style="color:#0F766E; font-weight:600; font-size:17px;">
+        Genug, ich möchte mir das Buch jetzt sichern!
+      </a>
+    </p>
+  </div>
+
+  <!-- ===== PRICE SECTION ===== -->
+  <div class="price-sec">
+    <h2>Dein Einstieg in die grenzenlose Macht Deines Unterbewusstseins</h2>
+    <p>Ich gebe dir das Wissen für nur 39,97 EUR – und du erhältst Zugang zu einem Wissen, das nicht nur mein Leben, sondern das Leben vieler anderer grundlegend verändert hat.</p>
+    <div class="price-amount">39,97 €</div>
+    <div class="price-note">Nur für kurze Zeit – sichere dir jetzt dein Exemplar</div>
+    <a href="https://www.digistore24.com/product/536103" class="btn-dark" target="_blank" rel="noopener noreferrer">
+      Jetzt sichern
+      <span class="btn-sub">Entfalte die volle Kraft Deines Unterbewusstseins</span>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://www.rheumafrei.de/impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
+    <a href="https://www.rheumafrei.de/datenschutz" target="_blank" rel="noopener noreferrer">Datenschutz</a>
+    <a href="https://www.rheumafrei.de/haftungsausschluss" target="_blank" rel="noopener noreferrer">Haftungsausschluss</a>
+    <a href="https://www.rheumafrei.de/agb" target="_blank" rel="noopener noreferrer">AGBs</a>
+  </footer>
+
+</div>
+
+</body>
+</html>

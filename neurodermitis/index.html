@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neurodermitis heilen (ganzheitlich) | Andreas Sadlowski</title>
+  <meta name="description" content="Wie Sina C. ihre Neurodermitis besiegte – nachdem Kortison, Kliniken und Heilpraktiker versagt hatten. Die KSG H+ Methode von Andreas Sadlowski.">
+  <link rel="canonical" href="https://www.andreas-sadlowski.de/neurodermitis/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,500;0,700;1,500&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      line-height: 1.75;
+      color: #1a1a1a;
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: #0F766E; }
+    p { margin: 0 0 1em; }
+
+    /* ===== Trust bar ===== */
+    .trustbar {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    /* ===== Wrapper ===== */
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== Sections ===== */
+    .section {
+      padding: 40px 0;
+    }
+    .section + .section {
+      border-top: 1px solid #e5e7eb;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      padding: 36px 0 28px;
+      text-align: center;
+    }
+    .hero .eyebrow {
+      font-size: 10px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .hero h1 {
+      font-family: 'Lora', serif;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin: 0 0 16px;
+      color: #1a1a1a;
+    }
+    .hero h1 .hl {
+      color: #0F766E;
+    }
+    .hero .sub {
+      font-size: 20px;
+      color: #4b5563;
+      margin: 0 0 20px;
+    }
+    .hero-video {
+      width: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 16/9;
+      background: #000;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .hero-video .vthumb {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+    }
+    .hero-video .vplay {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      z-index: 2;
+    }
+    .hero-video .vplay-btn {
+      width: 52px;
+      height: 38px;
+      background: #FF0000;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+    }
+    .hero-video.playing .vthumb,
+    .hero-video.playing .vplay { opacity: 0; pointer-events: none; }
+    .video-caption {
+      font-size: 12px;
+      color: #4b5563;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    /* ===== Typography ===== */
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin: 0 0 24px;
+      color: #1a1a1a;
+    }
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 8px;
+      color: #1a1a1a;
+    }
+    .byline {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+    }
+
+    /* ===== Full-width image ===== */
+    .full-img {
+      width: 100%;
+      border-radius: 4px;
+      margin: 16px 0;
+    }
+
+    /* ===== Blockquote ===== */
+    blockquote {
+      margin: 16px 0;
+      padding: 10px 16px;
+      border-left: 3px solid #0F766E;
+      font-style: italic;
+      color: #374151;
+      font-size: 13px;
+    }
+    blockquote cite {
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      color: #0F766E;
+      margin-top: 6px;
+      font-size: 12px;
+    }
+
+    /* ===== Bold callout ===== */
+    .callout {
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 12px 0;
+    }
+
+    /* ===== Phases ===== */
+    .phase {
+      margin: 16px 0;
+      padding: 14px 16px;
+      border-left: 3px solid #0F766E;
+      background: #f9fafb;
+    }
+    .phase-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #0F766E;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    /* ===== Before / After ===== */
+    .before-after {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 16px 0;
+    }
+    .ba-col { position: relative; }
+    .ba-col img { width: 100%; border-radius: 4px; }
+    .ba-label {
+      display: block;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+
+    /* ===== Checklist ===== */
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+    }
+    .checklist li {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-size: 13px;
+      color: #1a1a1a;
+      align-items: flex-start;
+    }
+    .checklist li::before {
+      content: "✓";
+      color: #0F766E;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ===== Category label ===== */
+    .cat-label {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #0F766E;
+      margin: 20px 0 8px;
+    }
+
+    /* ===== Book cover ===== */
+    .book-cover {
+      display: block;
+      width: 220px;
+      margin: 0 auto 24px;
+    }
+
+    /* ===== Offer numbered items ===== */
+    .offer-item {
+      margin: 16px 0;
+    }
+    .offer-item .offer-num {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    .offer-item .offer-value {
+      font-size: 11px;
+      color: #0F766E;
+      font-weight: 700;
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+
+    /* ===== Price box ===== */
+    .price-box {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 20px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .price-box .price-label {
+      font-size: 10px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .price-box .price {
+      font-family: 'Lora', serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .price-box .price-sub {
+      font-size: 11px;
+      color: #6b7280;
+      margin-bottom: 16px;
+    }
+
+    /* ===== CTA button ===== */
+    .btn-cta {
+      display: block;
+      width: 100%;
+      background: #0F766E;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 12px 0 8px;
+    }
+    .btn-cta:hover { background: #115E59; color: #fff; }
+    .fine-print {
+      font-size: 10px;
+      color: #9ca3af;
+      text-align: center;
+      margin: 0;
+    }
+
+    /* ===== Urgency ===== */
+    .urgency-label {
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-item {
+      margin-bottom: 18px;
+    }
+    .faq-item .faq-q {
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .faq-item .faq-a {
+      font-size: 13px;
+      color: #374151;
+      margin: 0;
+    }
+
+    /* ===== Final dark section ===== */
+    .final-section {
+      background: #111827;
+      color: #fff;
+      padding: 40px 24px;
+      text-align: center;
+    }
+    .final-section h2 {
+      color: #fff;
+      text-align: center;
+    }
+    .final-quote-box {
+      background: #f9fafb;
+      border-radius: 4px;
+      padding: 16px;
+      margin: 16px auto;
+      max-width: 480px;
+      text-align: center;
+    }
+    .final-quote-box p {
+      font-style: italic;
+      color: #1a1a1a;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+    .final-quote-box cite {
+      font-style: normal;
+      font-weight: 700;
+      color: #0F766E;
+      font-size: 12px;
+    }
+    .final-section .tagline {
+      color: #d1fae5;
+      font-size: 13px;
+      margin: 12px 0;
+    }
+    .final-section .sina-photo {
+      width: 320px;
+      max-width: 100%;
+      border-radius: 4px;
+      margin: 16px auto;
+    }
+    .final-section .btn-cta {
+      max-width: 480px;
+      margin: 16px auto 8px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #000;
+      padding: 10px 16px;
+      text-align: center;
+    }
+    footer a {
+      color: #9ca3af;
+      font-size: 11px;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+<!-- Trust bar -->
+<div class="trustbar">
+  Basiert auf 20 Jahren Erfahrung mit chronisch Erkrankten &nbsp;·&nbsp; Bereits tausende Menschen geholfen &nbsp;·&nbsp; Seit 2006
+</div>
+
+<!-- Hero -->
+<div class="page">
+  <div class="hero">
+    <span class="eyebrow">Neurodermitis – Der Ausweg, der wirklich funktioniert</span>
+    <h1>„Ich habe 14 Jahre lang immer wieder 10 Minuten damit verbracht, Eiterbläschen aufzupieken – <span class="hl">heute ist sie vollständig symptomfrei."</span></h1>
+    <p class="sub">Wie Sina C. ihre Neurodermitis besiegte – nachdem Kortison, Kliniken und Heilpraktiker versagt hatten. Und was das für dich bedeuten kann.</p>
+
+    <div class="hero-video" id="heroVideo" data-yt="CUds_SOYTas">
+      <div class="vthumb" style="background-image:url('https://i.ytimg.com/vi/CUds_SOYTas/hqdefault.jpg')"></div>
+      <div class="vplay">
+        <div class="vplay-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+    </div>
+    <p class="video-caption">▶ Sinas Geschichte in ihren eigenen Worten – komplett und ungekürzt</p>
+  </div>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;margin:0">
+
+<!-- Sinas Geschichte -->
+<div class="page">
+  <div class="section">
+    <h2>Sinas Geschichte – in ihren eigenen Worten</h2>
+    <p class="byline">Sina C., 47, Kosmetikerin:</p>
+
+    <img class="full-img" src="https://images.clickfunnels.com/33/71f6f51b114202b64645d96bc6a8e0/1.jpg" alt="Sina – entzündete Hände vorher">
+
+    <p>Sie wachte jeden Morgen auf und wusste nicht, wie schlimm es heute sein würde.</p>
+    <p>Eiterbläschen an den Armen. An den Händen. An den Beinen bis hinunter zu den Füßen. Entzündete Nagelbetten. Risse so tief, dass ihr Haare in die offene Haut gerieten, wenn sie sich frisieren wollte.</p>
+    <p>Jeden Morgen dieselbe Routine: 10 Minuten vor dem Spiegel stehen und die Bläschen aufstechen. Dann duschen – obwohl das Wasser auf der aufgeplatzten Haut brannte wie Feuer.</p>
+
+    <blockquote>„Ich habe wirklich unter der Dusche gestanden und geweint, weil mir das Wasser auf der Haut wehtat."</blockquote>
+
+    <img class="full-img" src="https://images.clickfunnels.com/fb/86980e49c5401ba64ad56a566b171d/Sina-Vorher.jpg" alt="Sina – entzündete Hand Nahaufnahme">
+
+    <p>Sina ist Kosmetikerin. Ihre Hände sind ihr Werkzeug, ihre Leidenschaft, ihr Lebensunterhalt. Doch in den schlimmsten Phasen konnte sie keine Krankenkarte mehr aus dem Portemonnaie ziehen. Alle Nagelbetten entzündet, die Haut so dünn, dass ihr Körner vom Brötchen wehtaten. Massagen? Unmöglich. Ihren Sattel auflegen? Unmöglich. Die Wäsche in die Maschine stopfen? Ihr Mann musste alles für sie machen.</p>
+
+    <blockquote>„Mir sind Gläser aus der Hand gefallen. Ich konnte nichts mehr festhalten. Ich konnte mich nicht mehr pflegen. Ich konnte meine Haare nicht mehr waschen."</blockquote>
+
+    <p>Die Ärzte sagten: Neurodermitis. Genetisch bedingt. Kortison.</p>
+    <p>Jedes Mal half das Kortison. Für eine Woche. Für zwei Wochen. Dann kam der nächste Schub – schlimmer als zuvor. Als das nicht mehr reichte, wollte man ihr in der Klinik ein Medikament geben – das, wie sich später herausstellte, ein starkes Antidepressivum war. Ohne dass ihr jemand gesagt hätte, was es war.</p>
+
+    <blockquote>„Ich habe mehr als einmal hier gesessen und einfach geweint. Ich wusste nicht, wie es weitergeht. Wie soll es weitergehen, wenn ich die einfachsten täglichen Dinge nicht mehr erledigen kann?"</blockquote>
+  </div>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;margin:0">
+
+<!-- Empathie -->
+<div class="page">
+  <div class="section">
+    <h2>Wenn dein Körper nicht mehr dein Zuhause ist</h2>
+    <p>Vielleicht kennst du dieses Gefühl.</p>
+    <p>Den Juckreiz, der nachts kommt – und der so heftig ist, dass du kratzt, obwohl du weißt, dass du es nicht solltest. Bis das Blut fließt. Bis die Haut aufreißt. Und trotzdem hört es nicht auf.</p>
+    <p>Die sorgfältig ausgewählte Kleidung morgens. Nicht weil sie dir gefällt – sondern weil sie die Stellen verdeckt. Der Blick anderer Menschen, der immer dort landet. Das Schwimmbad, der Strand, das Fitnessstudio – Orte, die du nicht mehr betrittst.</p>
+    <p>Vielleicht hast du auch alles probiert. Cremes. Kortison. Eliminationsdiäten. Allergietests. Teure Kliniken. Und jedes Mal dasselbe Muster: Kurze Besserung. Dann der nächste Schub. Dann Hoffnungslosigkeit.</p>
+    <p>Dabei liegst du mit einem Verdacht vollkommen richtig – einem Verdacht, den die meisten Ärzte nicht ernst nehmen:</p>
+
+    <blockquote>„Das kommt nicht von der Haut. Das kommt von innen."</blockquote>
+
+    <p>Sina hat diesen Verdacht jahrelang geäußert. Kein Arzt hat ihn ernst genommen. Bis sie den richtigen Weg fand.</p>
+  </div>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;margin:0">
+
+<!-- Warum Kortison versagt -->
+<div class="page">
+  <div class="section">
+    <h2>Warum Kortison, Cremes und Diäten immer wieder versagen</h2>
+    <p>Es ist kein Zufall, dass so viele Neurodermitis-Betroffene trotz allem – trotz jahrelanger Behandlung, trotz Disziplin, trotz enormen Kosten – nicht aus dem Kreislauf herauskommen.</p>
+    <p class="callout">Man behandelt das, was man sieht – nicht das, was es verursacht.</p>
+    <p>Die Rötung auf der Haut. Der Juckreiz. Die Entzündung. Das sind Symptome. Kortison schaltet diese Botschaft vorübergehend stumm. Aber die Ursache bleibt. Und der Körper findet einen anderen Weg, SOS zu rufen – oft lautstärker als zuvor.</p>
+    <p>Was wirklich hinter Neurodermitis steckt, sind in fast allen Fällen überlastete Organe. Eine Leber, die ihre Entgiftungsaufgabe nicht mehr vollständig erfüllen kann. Ein Darm, in dem die Grundlagen für ein gesundes Immunsystem fehlen. Nieren unter Dauerstress. Dazu häufig eine seelische Komponente, die den Körper immer wieder in den Entzündungsmodus zwingt.</p>
+    <p>Sinas Leberwerte waren nachweislich schlecht. Kein Arzt ist darauf eingegangen. Bis sie das Programm fand und begann, die Ursachen wirklich anzugehen.</p>
+  </div>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;margin:0">
+
+<!-- Wer ich bin -->
+<div class="page">
+  <div class="section">
+    <h2>Wer ich bin – und warum ich das sagen kann</h2>
+    <p>Ich bin kein Arzt. Kein Heilpraktiker.</p>
+    <p>Mein akademischer Hintergrund liegt im Maschinenbau – Bachelor und Master. Was mich in die Welt der chronischen Erkrankungen gebracht hat, war kein Studienplan. Es war eine nahestehende Person, die jahrelang an schwerer rheumatoider Arthritis litt. Die Schulmedizin bot keine Heilung. Ich konnte nicht tatenlos zusehen.</p>
+    <p>Ich verschlang wissenschaftliche Studien. Sprach mit Ärzten, Professoren, Heilpraktikern. Analysierte tausende Fälle. Fünfmal so viel Zeit, wie ich in mein Ingenieurstudium gesteckt hatte, habe ich in das Verständnis von Heilung investiert.</p>
+    <p>Das Ergebnis war die KSG H+ Methode. Das erste Buch erschien 2006. Mit der Zeit kamen andere – Rheumatiker zuerst, dann Menschen mit Neurodermitis, die sagten: „Wenn es Rheumatikern hilft – warum nicht mir?" Sie hatten recht.</p>
+    <p>Heute, nach über 20 Jahren und tausenden begleiteten Fällen, kann ich sagen: Es gibt keinen Menschen, bei dem die Ursachen nicht behoben werden können. Das ist keine Behauptung – das ist Erfahrung.</p>
+    <p><strong>Andreas Sadlowski</strong></p>
+  </div>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;margin:0">
+
+<!-- Dekonstruktion -->
+<div class="page">
+  <div class="section">
+    <h2>„Dekonstruktion im Menschen" – wie das System wirklich funktioniert</h2>
+    <p>Der Name ist Programm. Dekonstruktion bedeutet: Wir nehmen auseinander, was krank macht. Nicht um zu zerstören – sondern um zu verstehen, was den Motor der Erkrankung am Laufen hält.</p>
+    <p>Das Programm folgt drei klaren Phasen:</p>
+
+    <div class="phase">
+      <span class="phase-label">Phase 1</span>
+      <h3>Die wahren Auslöser erkennen</h3>
+      <p>Wir identifizieren die körperlichen, seelischen und umweltbedingten Faktoren, die deinen Körper in einem dauerhaften Entzündungs- und Stresszustand halten. Organe, die überarbeitet sind. Parasiten, Pilze, Schadstoffe. Aber auch das, was innerlich trägt – oder belastet.</p>
+    </div>
+
+    <div class="phase">
+      <span class="phase-label">Phase 2</span>
+      <h3>Die Krankheitskette lösen</h3>
+      <p>Schritt für Schritt werden die inneren Belastungen abgebaut. Leber. Darm. Nieren. In einer bestimmten Reihenfolge, die entscheidend ist. Wer die Reihenfolge ignoriert, sieht keine dauerhaften Ergebnisse – egal wie gut die einzelnen Maßnahmen sind.</p>
+    </div>
+
+    <div class="phase">
+      <span class="phase-label">Phase 3</span>
+      <h3>Stabilisierung – Hautfrieden, der bleibt</h3>
+      <p>Wir verankern neue Bedingungen, die es deinem Körper leicht machen, dauerhaft gesund zu bleiben. Nicht durch Kontrolle – sondern weil die Ursachen beseitigt sind und der Körper endlich das tun kann, was er immer wollte: sich selbst heilen.</p>
+    </div>
+
+    <blockquote>
+      „Ich habe mit den Tees gestartet – Nieren- und Lebertee – weil ich wusste, dass meine Leberwerte so schlecht waren. Das ist genau mein Thema. Und habe mich dann einfach reingestürzt. Das Programm ist kein Ponyhof. Aber ich hätte alles gemacht, damit es mir besser geht. Ich wollte mein Leben zurück."
+      <cite>— Sina C.</cite>
+    </blockquote>
+  </div>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;margin:0">
+
+<!-- Sina heute -->
+<div class="page">
+  <div class="section">
+    <h2>Sina heute – vollständig symptomfrei</h2>
+
+    <div class="before-after">
+      <div class="ba-col">
+        <span class="ba-label">Vorher</span>
+        <img src="https://images.clickfunnels.com/fb/86980e49c5401ba64ad56a566b171d/Sina-Vorher.jpg" alt="Sina Hände vorher">
+      </div>
+      <div class="ba-col">
+        <span class="ba-label">Nachher</span>
+        <img src="https://images.clickfunnels.com/10/3daa874db94eb983bf9ea5c34dae13/Sina-nachher.jpg" alt="Sina heute – symptomfrei">
+      </div>
+    </div>
+
+    <ul class="checklist">
+      <li>Vollständig symptomfrei – keine Bläschen, keine Entzündungen, kein Juckreiz mehr</li>
+      <li>Schläft wieder durch die Nacht</li>
+      <li>Kann ihre Tiere versorgen, ihren Sattel auflegen, ihr Pferd reiten</li>
+      <li>Duscht wieder ohne Schmerzen</li>
+      <li>Haare und Nägel wachsen wieder normal</li>
+      <li>Trägt, was sie möchte – nicht was die Haut erlaubt</li>
+      <li>Arbeitet wieder vollständig als Kosmetikerin – mit ihren Händen</li>
+    </ul>
+
+    <blockquote>
+      „Wenn ich jetzt im Nachgang diese Fotos angucke, kamen mir echt die Tränen. Man steckt in der Krankheit drin und kämpft sich durch jeden Tag irgendwie. Und dann siehst du zurück – und merkst, was hinter dir liegt."
+      <cite>— Sina C.</cite>
+    </blockquote>
+
+    <p>Sina hat ihren Weg konsequent zu Ende gegangen. Heute ist sie vollständig frei. Keine Symptome mehr.</p>
+    <p>Genau das unterscheidet Menschen, die gesund werden, von denen, die es nicht tun.</p>
+  </div>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;margin:0">
+
+<!-- Was du bekommst -->
+<div class="page">
+  <div class="section">
+    <h2>Was du heute bekommst</h2>
+
+    <img class="book-cover" src="https://images.clickfunnels.com/95/8745d6aee84e74809d7de63fe578e0/Dekonstruktion_im_Menschen_300x405.png" alt="Buch: Dekonstruktion im Menschen">
+
+    <p><strong>Hier sind nur einige der Dinge, die du in diesem Buch entdecken wirst:</strong></p>
+
+    <span class="cat-label">Schnelle Durchbrüche</span>
+    <ul class="checklist">
+      <li>Wie du deine Neurodermitis von Zuhause aus Schritt für Schritt in den Griff bekommst – ohne teure Kliniken, ohne endlose Medikamente</li>
+      <li>Die 3 Faktoren, von denen die Geschwindigkeit deiner Hautverbesserung abhängt – und wie du jeden davon zu deinem Vorteil nutzt</li>
+      <li>Warum die meisten Neurodermitis-Betroffenen trotz Diät keinen Durchbruch erleben – und welche unsichtbaren Prozesse du zuerst stoppen musst</li>
+      <li>Die einfachste, schnellste und effektivste Methode herauszufinden, welche Nahrungsmittel deine Haut verschlechtern – oft überraschend!</li>
+    </ul>
+
+    <span class="cat-label">Tiefe Ursachen erkennen</span>
+    <ul class="checklist">
+      <li>Welche 3 Organe bei fast allen Betroffenen überlastet sind – und wie du sie wieder zu voller Leistung bringst</li>
+      <li>Der Kreislauf aus Entzündung und Barriere-Schäden – und wie du ihn endgültig durchbrichst</li>
+      <li>Warum Kortison immer nur kurz hilft – und wie du trotzdem dauerhaft Ruhe in deiner Haut aufbaust</li>
+      <li>Der versteckte Stressfaktor, der Schübe immer wieder auslöst – und wie du ihn in wenigen Tagen entschärfst</li>
+      <li>Warum deine Hautprobleme nicht in der Haut beginnen – und wo du wirklich ansetzt</li>
+      <li>Warum erhöhte Leberwerte bei Neurodermitis kein Zufall sind – und was das für deine Heilung bedeutet</li>
+    </ul>
+
+    <span class="cat-label">Verborgene Saboteure ausschalten</span>
+    <ul class="checklist">
+      <li>48 mögliche Symptome eines Parasitenbefalls – und wie er deine Haut von innen reizt</li>
+      <li>Innere und äußere Pilze – wie sie Neurodermitis-Schübe befeuern und wie du sie eliminierst</li>
+      <li>Die 6 Schadstoffquellen, die deine Haut täglich belasten – ohne dass du es merkst</li>
+      <li>Warum manche Menschen trotz Giftbelastung gesunde Haut behalten – und wie du zu dieser Gruppe wechselst</li>
+      <li>Der Mythos Übersäuerung – warum Ärzte darüber lächeln (zu Recht) und was das praktisch für dich heißt</li>
+    </ul>
+
+    <span class="cat-label">Die entscheidenden Systeme reparieren</span>
+    <ul class="checklist">
+      <li>Die Funktionsweise der Leber – und warum es kaum einen Neurodermitis-Betroffenen gibt, bei dem sie wirklich richtig funktioniert</li>
+      <li>Intrahepatische Steine in der Leber – von der Medizin bestätigt, aber kaum ernst genommen. Warum das ein fataler Fehler ist</li>
+      <li>10 Gründe, warum die Leberentstauung bei Neurodermitis unumgänglich ist</li>
+      <li>80 % deines Immunsystems sitzen im Darm – und doch macht es fast keiner richtig, den Verdauungstrakt instand zu setzen</li>
+      <li>Die Funktionsweise der Nieren – und mit welcher erstaunlichen Methode du sie wieder auf Vordermann bringst</li>
+    </ul>
+
+    <span class="cat-label">Tiefgreifende Heilung auf allen Ebenen</span>
+    <ul class="checklist">
+      <li>Wie Ärger, Angst, Depression und Hoffnungslosigkeit deine Haut blockieren – und welche Lösung du in Anspruch nehmen kannst</li>
+      <li>Über die konstruktive und destruktive Wirkung von Gedanken und Charakter – und wie man dabei wirklich vorgeht</li>
+      <li>Eine Antwort auf die Frage: „Warum gerade ich?" – und wie diese Einsicht die Heilung beschleunigt</li>
+      <li>Warum Neurodermitis mit Vererbung wenig zu tun hat – und was wirklich dahintersteckt</li>
+      <li>Schritt-für-Schritt-Anleitung: Du rätest nicht – du weißt, was zu tun ist</li>
+    </ul>
+
+    <p style="color:#6b7280;font-size:12px">Das ist nur eine kleine Auswahl. Insgesamt sind es 10 Kapitel mit sofort anwendbarem Wissen.</p>
+
+    <div class="offer-item">
+      <p class="offer-num">1. Das Buch „Dekonstruktion im Menschen"</p>
+      <ul class="checklist">
+        <li>113 Seiten – kein medizinisches Kauderwelsch, sondern klare Anweisungen</li>
+        <li>Die komplette KSG H+ Methode: Körper, Seele, Geist – alle drei Ebenen</li>
+        <li>Die 10-Schritte-Anleitung, die Sina und viele andere durchgeführt haben</li>
+        <li>Für jeden einsetzbar – egal welche Diagnose, egal wie lange du schon betroffen bist</li>
+        <li>Erhältlich als gedrucktes Buch, E-Book und Hörbuch</li>
+      </ul>
+    </div>
+
+    <div class="offer-item">
+      <p class="offer-num">2. Persönliche Coachingbriefe für 6 Monate – alle paar Tage von Andreas</p>
+      <p class="offer-value">Wert: 399 € – heute ohne Aufpreis inklusive</p>
+      <ul class="checklist">
+        <li>Jeder Brief ist auf die Phase abgestimmt, in der du dich gerade befindest</li>
+        <li>Konkrete Handlungsschritte, Motivation und tiefere Einsichten</li>
+        <li>Du bist 6 Monate lang nicht auf dich allein gestellt</li>
+        <li>Normalerweise ein separates Begleitprogramm – heute ohne Aufpreis inklusive</li>
+      </ul>
+    </div>
+
+    <div class="price-box">
+      <span class="price-label">Gesamtwert über 500 € – Du zahlst heute nur</span>
+      <div class="price">39,95 €</div>
+      <p class="price-sub">Einmalig · Kein Abo · Keine versteckten Kosten</p>
+      <a href="https://www.digistore24.com" target="_blank" rel="noopener" class="btn-cta">▶ Jetzt sichern – Buch + 6 Monate Coaching</a>
+      <p class="fine-print">Sofortiger Zugang nach Bestellung · Sicher bezahlen über Digistore24</p>
+    </div>
+  </div>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;margin:0">
+
+<!-- Warum jetzt -->
+<div class="page">
+  <div class="section">
+    <h2>Warum jetzt – und nicht später</h2>
+    <p>Sina hat mir im Interview etwas erzählt, das ich immer wieder höre:</p>
+
+    <blockquote>„Ich habe wirklich nicht damit gerechnet, was daraus wird. Am Anfang dachte ich: Ein Kortison, und das Thema ist durch. Das war im Januar. Und dann ist ein Jahr vergangen."</blockquote>
+
+    <p>Das ist der häufigste Fehler, den ich sehe. Nicht Ablehnung. Nicht Zweifel. Sondern das stille „Ich warte noch etwas ab."</p>
+    <p>Aber Neurodermitis wartet nicht. Die Schübe werden nicht weniger. Die Haut wird nicht von allein dicker. Die Nächte werden nicht besser.</p>
+    <p><span class="urgency-label">Wichtiger Hinweis zur Verfügbarkeit:</span> Die persönlichen Coachingbriefe kann ich nur für eine begrenzte Anzahl neuer Leser pro Monat anbieten – damit jeder die volle Aufmerksamkeit bekommt. Sobald das Kontingent erreicht ist, ist dieser Bonus nicht mehr in dieser Form erhältlich.</p>
+
+    <a href="https://www.digistore24.com" target="_blank" rel="noopener" class="btn-cta">▶ Jetzt starten – 39,95 € | Sofortiger Zugang</a>
+    <p class="fine-print">Einmalig · Kein Abo · Sichere Zahlung über Digistore24</p>
+  </div>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;margin:0">
+
+<!-- FAQ -->
+<div class="page">
+  <div class="section">
+    <h2>Häufige Fragen</h2>
+
+    <div class="faq-item">
+      <p class="faq-q">Ist der Preis von 39,95 € einmalig?</p>
+      <p class="faq-a">Ja. Einmalig. Kein Abo. Keine versteckten Kosten. Du bekommst das Buch plus 6 Monate Coachingbriefe – ohne Aufpreis.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Ich habe schon alles probiert. Warum sollte das hier funktionieren?</p>
+      <p class="faq-a">Weil die meisten Ansätze Symptome behandeln. Dieses Programm setzt tiefer an – es löst die Ursachenkette, die die Entzündungen immer wieder auslöst. Sina hatte nichts mehr zu verlieren. Und sie hat gewonnen.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Ich habe noch keine genaue Diagnose. Ist es trotzdem das Richtige für mich?</p>
+      <p class="faq-a">Ja. Es spielt keine Rolle, ob die Diagnose „Neurodermitis", „atopische Dermatitis" oder anders lautet. Die Ursachen sind bei fast allen Hautbetroffenen dieselben. Was zählt, ist nicht der Name – sondern dass du die Ursachen an der Wurzel angehst.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Muss ich meine Medikamente absetzen?</p>
+      <p class="faq-a">Nein. Du kannst sofort starten. Änderungen an Medikamenten gehören in die Hand deines Arztes. Unser Ansatz ist komplementär.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Hilft das auch bei schwerer, langjähriger Neurodermitis?</p>
+      <p class="faq-a">Viele der Menschen, die das Programm durchgeführt haben, waren jahrelang betroffen. Sina hatte über 14 Jahre schwerste Symptome. Entscheidend sind Konsequenz und Vollständigkeit der Umsetzung.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Ich bin viel beschäftigt. Schaffe ich das im Alltag?</p>
+      <p class="faq-a">Ja. Das Programm ist schrittweise aufgebaut. Die Coachingbriefe kommen alle paar Tage mit kleinen, konkreten Aufgaben. Sina hat es als Kosmetikerin und Mutter durchgezogen.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Ab welchem Alter kann man das Programm durchführen?</p>
+      <p class="faq-a">Unser jüngster Kunde war 6 Jahre alt. Der älteste war 94 Jahre jung – und ist mittlerweile über 100 und vollkommen gesund. (Nachweislich.)</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Gibt es das Buch auch als E-Book oder Hörbuch?</p>
+      <p class="faq-a">Ja. Bei der Buchbestellung hast du die Möglichkeit, es auch in diesen Formaten zu erhalten.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Gibt es das Buch in anderen Sprachen?</p>
+      <p class="faq-a">Ja – in Englisch, Spanisch, Französisch, Niederländisch und Russisch. Kontakt: <a href="mailto:service@rheumafrei.de">service@rheumafrei.de</a></p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Noch eine Frage?</p>
+      <p class="faq-a">Sehr gerne: <a href="mailto:service@rheumafrei.de">service@rheumafrei.de</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Final dark CTA -->
+<div class="final-section">
+  <div style="max-width:580px;margin:0 auto">
+    <h2>Du stehst jetzt an einer Weggabelung</h2>
+    <p style="color:#d1d5db;font-size:13px">Option 1: Du wartest. Vielleicht kommt der nächste Schub. Vielleicht nicht. Du weißt es nicht.</p>
+    <p style="color:#d1d5db;font-size:13px">Option 2: Du entscheidest dich heute – so wie Sina sich entschieden hat. Mit dem Gedanken: Ich habe nichts mehr zu verlieren. Ich will mein Leben zurück.</p>
+
+    <div class="final-quote-box">
+      <p>„Ich wollte wieder frei leben können. Ohne Angst zu haben, was morgen früh ist."</p>
+      <cite>— Sina C.</cite>
+    </div>
+
+    <p class="tagline">Heute ist sie vollständig frei. Keine Symptome mehr.</p>
+
+    <img class="sina-photo" src="https://images.clickfunnels.com/64/1800a264cc459d955dc61240ba6245/sina-lachelnd.jpg" alt="Sina – heute symptomfrei">
+
+    <a href="https://www.digistore24.com" target="_blank" rel="noopener" class="btn-cta">▶ Jetzt Buch sichern – 39,95 € | Einmalig | Sofortiger Zugang</a>
+    <p class="fine-print" style="color:#4b5563">Sichere Zahlung über Digistore24 · Einmalig, kein Abo</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <a href="/impressum/">Impressum</a>
+  <a href="/datenschutz/">Datenschutz</a>
+  <a href="/haftungsausschluss/">Haftungsausschluss</a>
+  <a href="/agb/">AGBs</a>
+</footer>
+
+<script>
+  document.querySelectorAll('.hero-video[data-yt]').forEach(el => {
+    el.addEventListener('click', () => {
+      if (el.classList.contains('playing')) return;
+      const id = el.dataset.yt;
+      const f = document.createElement('iframe');
+      f.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+      f.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      f.setAttribute('allowfullscreen', '');
+      f.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+      el.appendChild(f);
+      el.classList.add('playing');
+    });
+  });
+</script>
+</body>
+</html>

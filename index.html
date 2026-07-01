@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Andreas Sadlowski – KSG H+ Methode für ganzheitliche Gesundheit</title>
+  <meta name="description" content="Körper, Seele und Geist in Balance bringen – mit der KSG H+ Methode von Andreas Sadlowski. Autor, Coach und Gesundheitsexperte mit über 20 Jahren Erfahrung.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Andreas Sadlowski – KSG H+ Methode für ganzheitliche Gesundheit">
+  <meta property="og:description" content="Körper, Seele und Geist in Balance bringen – mit der KSG H+ Methode. Über 10.000 Menschen haben bereits den Weg zur echten Gesundheit gefunden.">
+  <meta property="og:locale" content="de_DE">
+  <link rel="canonical" href="https://www.andreas-sadlowski.de/">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,500;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <style>
+    /* ===== Hero ===== */
+    .hero{position:relative;overflow:hidden;padding:72px 0 80px;background:
+      radial-gradient(1100px 500px at 90% -10%,#D1FAE5 0%,transparent 60%),
+      radial-gradient(800px 400px at -10% 110%,#FEF3C7 0%,transparent 60%),
+      linear-gradient(180deg,#fff,#F6FAF9)}
+    .hero .grid{display:grid;grid-template-columns:1fr;gap:52px;align-items:center}
+    @media(min-width:980px){.hero .grid{grid-template-columns:1.1fr .9fr;gap:60px}}
+    .hero h1 .hl{background:linear-gradient(180deg,transparent 64%,#FEE08A 64%);padding:0 4px}
+    .hero .sub{font-size:1.15rem;color:var(--muted);max-width:560px;margin-top:18px;line-height:1.65}
+    .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:28px}
+    .trust-chips{display:flex;flex-wrap:wrap;gap:14px;margin-top:20px;color:var(--muted);font-size:.9rem}
+    .trust-chips span{display:inline-flex;align-items:center;gap:7px}
+    .trust-chips svg{width:17px;height:17px;color:var(--teal);flex-shrink:0}
+    .hero-visual{position:relative;border-radius:24px;min-height:420px;display:grid;place-items:center}
+    .hero-quote{position:absolute;bottom:22px;left:-14px;right:-14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);font-size:.88rem}
+    @media(max-width:700px){.hero-quote{left:0;right:0}}
+    .hero-quote cite{display:block;font-style:normal;font-weight:700;color:var(--teal-700);margin-top:6px;font-size:.82rem}
+    .av-badge{position:absolute;top:18px;right:-10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;box-shadow:var(--shadow);font-size:.82rem;font-weight:700;text-align:center;line-height:1.3}
+    @media(max-width:700px){.av-badge{right:6px}}
+    .av-badge .num{font-family:'Lora',serif;font-size:1.5rem;color:var(--teal-700);display:block}
+
+    /* ===== Method pillars ===== */
+    .pillar{background:#fff;border-radius:var(--radius-lg);padding:30px;border:1px solid var(--line);position:relative;overflow:hidden}
+    .pillar .step{position:absolute;top:-16px;right:18px;font-family:'Lora',serif;font-size:5rem;color:var(--teal-50);font-weight:700;line-height:1}
+    .pillar h3{margin-top:6px}
+    .pillar p{color:var(--muted);margin:0;font-size:.98rem}
+    .pillar .ico{width:48px;height:48px;border-radius:12px;background:var(--teal-50);color:var(--teal-700);display:grid;place-items:center;margin-bottom:16px}
+
+    /* ===== Book promo ===== */
+    .bookpromo{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
+    @media(min-width:900px){.bookpromo{grid-template-columns:.75fr 1.25fr}}
+    .bookpromo .shot{display:grid;place-items:center;background:linear-gradient(160deg,#ECFDF5,#FFF7ED);border-radius:24px;padding:44px;border:1px solid var(--line)}
+    .bookpromo .shot .ph{min-height:300px;width:100%;border-radius:16px;background:linear-gradient(135deg,#ECFDF5,#FFF7ED);border:1px solid var(--line);display:grid;place-items:center;color:var(--teal-700);font-family:'Lora',serif;font-size:1.1rem;font-weight:700;text-align:center;padding:24px}
+
+    /* ===== Video ===== */
+    .video-embed{position:relative;border-radius:var(--radius-lg);overflow:hidden;background:#000;aspect-ratio:16/9;cursor:pointer;box-shadow:var(--shadow-lg)}
+    .video-embed .vthumb{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .3s}
+    .video-embed .vthumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.55))}
+    .video-embed:hover .vthumb{transform:scale(1.03)}
+    .video-embed .vplay{position:absolute;inset:0;margin:auto;width:84px;height:60px;border-radius:16px;background:#FF0000;display:grid;place-items:center;box-shadow:0 12px 34px rgba(0,0,0,.45);transition:transform .15s;z-index:2}
+    .video-embed:hover .vplay{transform:scale(1.06)}
+    .video-embed .vplay svg{margin-left:2px}
+    .video-embed .vtitle{position:absolute;left:18px;right:18px;bottom:16px;color:#fff;font-weight:600;text-shadow:0 1px 6px rgba(0,0,0,.55);z-index:2}
+    .video-embed.playing .vthumb,.video-embed.playing .vplay,.video-embed.playing .vtitle{opacity:0;pointer-events:none}
+
+    /* ===== CTA band ===== */
+    .ctaband{background:var(--bg-3);color:#fff;border-radius:var(--radius-lg);padding:52px 48px;text-align:center}
+    .ctaband h2{color:#fff;margin-bottom:12px}
+    .ctaband p{color:#C9D2D0;max-width:560px;margin:0 auto 28px}
+  </style>
+</head>
+<body>
+
+<!-- ===== Announcement bar ===== -->
+<div class="announce">
+  <strong>Neu:</strong> Das Buch „Dekonstruktion im Menschen" ist jetzt erhältlich &nbsp;→&nbsp; <a href="https://www.rheumafrei.de/buch/" style="color:#fef3c7;text-decoration:underline">Jetzt bestellen</a>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <a href="/" class="logo">
+        <div class="mark">AS</div>
+        Andreas Sadlowski
+      </a>
+      <nav class="nav">
+        <a href="#methode">Die Methode</a>
+        <a href="#ueber">Über mich</a>
+        <a href="#buch">Das Buch</a>
+        <a href="#testimonials">Erfahrungen</a>
+      </nav>
+      <a href="#buch" class="btn" style="padding:11px 18px;font-size:.95rem;box-shadow:none">Buch bestellen</a>
+      <button class="burger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#methode">Die Methode</a>
+    <a href="#ueber">Über mich</a>
+    <a href="#buch">Das Buch</a>
+    <a href="#testimonials">Erfahrungen</a>
+    <a href="#buch" class="btn btn--teal" style="margin-top:8px">Buch bestellen</a>
+  </nav>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <span class="eyebrow">KSG H+ Methode · Ganzheitliche Gesundheit</span>
+        <h1 style="margin-top:16px">Dein Körper kann heilen —<br><span class="hl">wenn du weißt wie.</span></h1>
+        <p class="sub">Die KSG H+ Methode verbindet körperliche, seelische und mentale Gesundheit zu einem ganzheitlichen System. Über 10.000 Menschen haben bereits den Weg zu echter, dauerhafter Gesundheit gefunden.</p>
+        <div class="cta-row">
+          <a href="#buch" class="btn btn--lg btn--pulse">
+            Jetzt Buch entdecken <span class="arrow">→</span>
+          </a>
+          <a href="#methode" class="btn btn--ghost">Methode kennenlernen</a>
+        </div>
+        <div class="trust-chips">
+          <span>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            Ohne Medikamente
+          </span>
+          <span>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            20+ Jahre Erfahrung
+          </span>
+          <span>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            Ganzheitlicher Ansatz
+          </span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/img/andreas-sadlowski.jpg" alt="Andreas Sadlowski" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:24px;display:block">
+        <div class="av-badge">
+          <span class="num">10.000+</span>
+          Menschen<br>begleitet
+        </div>
+        <div class="hero-quote">
+          „Wer die höheren Gesetze des Körpers versteht, kann sich selbst heilen — das ist keine Magie, das ist Wissen."
+          <cite>— Andreas Sadlowski</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trustbar ===== -->
+<div class="trustbar">
+  <div class="container">
+    <div class="row">
+      <div class="cell"><div class="num">10.000+</div><div class="lbl">Menschen begleitet</div></div>
+      <div class="cell"><div class="num">20+</div><div class="lbl">Jahre Erfahrung</div></div>
+      <div class="cell"><div class="num">3</div><div class="lbl">Gesundheitsdimensionen</div></div>
+      <div class="cell"><div class="num">1</div><div class="lbl">Ganzheitliche Methode</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Methode ===== -->
+<section id="methode">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Die Methode</span>
+      <h2 style="margin-top:12px">Die KSG H+ Methode —<br>Gesundheit in drei Dimensionen</h2>
+      <p>Echte Gesundheit entsteht nicht durch das Behandeln einzelner Symptome. Die KSG H+ Methode adressiert alle drei Ebenen gleichzeitig.</p>
+    </div>
+    <div class="cards cols-3">
+      <div class="pillar">
+        <div class="step">K</div>
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Körperliche Gesundheit</h3>
+        <p>Autoimmunerkrankungen, Rheuma, Allergien, Hauterkrankungen und Unverträglichkeiten — der Körper hat die Fähigkeit zur Selbstheilung, wenn man ihm die richtigen Bedingungen gibt.</p>
+      </div>
+      <div class="pillar">
+        <div class="step">S</div>
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Seelische Gesundheit</h3>
+        <p>Innerer Frieden, emotionale Ausgeglichenheit und tiefes Wohlbefinden sind keine Zufälle — sie entstehen durch ein systematisches Fundament, das auf Universalgesetzen basiert.</p>
+      </div>
+      <div class="pillar">
+        <div class="step">G</div>
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+        </div>
+        <h3>Mentale Gesundheit</h3>
+        <p>Gedanken formen die Realität. Wer negative Gedankenmuster durchbricht und klare mentale Strukturen aufbaut, erlebt eine Freiheit, die körperliche Heilung erst möglich macht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Video ===== -->
+<section class="bg-alt">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Methode im Detail</span>
+      <h2 style="margin-top:12px">Wie funktioniert die KSG H+ Methode?</h2>
+      <p>In diesem Video erklärt Andreas Sadlowski persönlich, wie Körper, Seele und Geist zusammenhängen — und warum konventionelle Medizin oft nur an der Oberfläche kratzt.</p>
+    </div>
+    <div style="max-width:860px;margin:0 auto">
+        <div class="video-embed" data-yt="eldLeX3Ieqo">
+          <div class="vthumb" style="background-image:url('https://i.ytimg.com/vi/eldLeX3Ieqo/maxresdefault.jpg')"></div>
+          <div class="vplay"><svg width="34" height="34" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="vtitle">Wie funktioniert die KSG H+ Methode?</div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- ===== Über Andreas ===== -->
+<section id="ueber">
+  <div class="container">
+    <div class="author">
+      <div class="author-photo">
+        <img src="assets/img/andreas-sadlowski.jpg" alt="Andreas Sadlowski – Autor und Coach der KSG H+ Methode" style="border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);width:100%">
+        <div class="ribbon" style="position:absolute;top:20px;left:-8px;background:var(--gold);color:#fff;font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:8px;box-shadow:var(--shadow)">Bestseller-Autor</div>
+      </div>
+      <div>
+        <span class="eyebrow">Über mich</span>
+        <h2 style="margin-top:12px">Gesundheit ist kein Glück —<br>sie ist eine Entscheidung.</h2>
+        <p style="color:var(--muted);font-size:1.08rem;margin-top:12px">Andreas Sadlowski ist Autor, Coach und Entwickler der KSG H+ Methode. Seit über 20 Jahren beschäftigt er sich intensiv mit den Wechselwirkungen von Körper, Seele und Geist — und hat dabei ein System entwickelt, das tausenden Menschen zu echter, nachhaltiger Gesundheit verholfen hat.</p>
+        <p style="color:var(--muted);font-size:1.08rem">Sein Ansatz: Die Schulmedizin behandelt Symptome. Die KSG H+ Methode geht an die Wurzel. Welche Gesetze regiert den Körper? Was baut ihn auf — und was zerstört ihn? Diese Fragen beantwortet Andreas Sadlowski in seiner täglichen Arbeit und in seinem Buch.</p>
+        <div class="author-stats">
+          <div><div class="num">10.000+</div><div class="lbl">Klienten begleitet</div></div>
+          <div><div class="num">20+</div><div class="lbl">Jahre Erfahrung</div></div>
+          <div><div class="num">1</div><div class="lbl">Buch veröffentlicht</div></div>
+          <div><div class="num">3</div><div class="lbl">Methoden-Säulen</div></div>
+        </div>
+        <a href="#buch" class="btn">Das Buch entdecken <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Buch ===== -->
+<section id="buch" class="bg-alt">
+  <div class="container">
+    <div class="bookpromo">
+      <div class="shot">
+        <img src="assets/img/buch-cover.png" alt="Buch: Dekonstruktion im Menschen von Andreas Sadlowski" style="width:min(280px,80%);transform:rotate(-2deg);filter:drop-shadow(0 24px 48px rgba(11,31,28,.24))">
+      </div>
+      <div>
+        <span class="eyebrow">Das Buch</span>
+        <h2 style="margin-top:12px">„Dekonstruktion im Menschen"</h2>
+        <p style="color:var(--muted);font-size:1.08rem;margin-top:12px">Das Standardwerk zur KSG H+ Methode. Andreas Sadlowski erklärt darin erstmals vollständig, wie Körper, Seele und Geist zusammenspielen — und wie jeder Mensch dieses System für sich nutzen kann.</p>
+        <ul class="includes">
+          <li><div class="check">✓</div><span>Die Grundgesetze körperlicher Selbstheilung</span></li>
+          <li><div class="check">✓</div><span>Warum Autoimmunerkrankungen heilbar sind</span></li>
+          <li><div class="check">✓</div><span>Das seelisch-mentale Fundament echter Gesundheit</span></li>
+          <li><div class="check">✓</div><span>Schritt-für-Schritt-Anleitung zur KSG H+ Methode</span></li>
+          <li><div class="check">✓</div><span>Über 20 Jahre Forschung und Praxiserfahrung</span></li>
+        </ul>
+        <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+          <a href="https://www.rheumafrei.de/buch/" class="btn btn--lg">
+            Jetzt Buch bestellen <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Erfahrungen</span>
+      <h2 style="margin-top:12px">Was Menschen sagen, die die Methode angewendet haben</h2>
+    </div>
+    <div class="t-grid">
+      <div class="t-card">
+        <div class="t-tag">Rheuma</div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">„Ich hatte 12 Jahre lang rheumatoide Arthritis und war überzeugt, damit leben zu müssen. Nach 4 Monaten mit der KSG H+ Methode sind meine Entzündungswerte normal — ohne Methotrexat."</p>
+        <div class="t-meta">
+          <div class="t-avatar">MH</div>
+          <div><div class="t-name">Maria H.</div><div class="t-condition">Rheumatoide Arthritis, 54 Jahre</div></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-tag">Autoimmun</div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">„Das Buch hat mir endlich erklärt, warum mein Körper gegen sich selbst kämpft — und was ich dagegen tun kann. Endlich versteht jemand das große Bild."</p>
+        <div class="t-meta">
+          <div class="t-avatar">TK</div>
+          <div><div class="t-name">Thomas K.</div><div class="t-condition">Hashimoto, 47 Jahre</div></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-tag">Ganzheitlich</div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">„Ich war skeptisch gegenüber dem mentalen Teil. Aber genau dort lag mein Problem. Die Verbindung zwischen Stress, Emotionen und körperlicher Entzündung war mir nie so klar wie nach Andreas' Methode."</p>
+        <div class="t-meta">
+          <div class="t-avatar">SK</div>
+          <div><div class="t-name">Sabine K.</div><div class="t-condition">Chronische Erschöpfung, 51 Jahre</div></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-tag">Psoriasis</div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">„Meine Haut ist das erste Mal seit 8 Jahren wieder frei von Ausbrüchen. Die KSG H+ Methode hat mir gezeigt, dass Haut immer ein Spiegel des Inneren ist."</p>
+        <div class="t-meta">
+          <div class="t-avatar">AB</div>
+          <div><div class="t-name">Andrea B.</div><div class="t-condition">Psoriasis, 43 Jahre</div></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-tag">Mentale Klarheit</div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">„Ich kam wegen meiner Gelenke — und habe zusätzlich eine mentale Klarheit gefunden, die ich seit Jahren vermisst hatte. Alles hängt zusammen, und Andreas erklärt warum."</p>
+        <div class="t-meta">
+          <div class="t-avatar">RW</div>
+          <div><div class="t-name">Roland W.</div><div class="t-condition">Gicht, Burnout, 58 Jahre</div></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-tag">Allergien</div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">„Nach 30 Jahren Pollenallergie und unzähligen Antihistaminika bin ich seit einem Jahr beschwerdefrei. Das hätte ich nie für möglich gehalten."</p>
+        <div class="t-meta">
+          <div class="t-avatar">LF</div>
+          <div><div class="t-name">Lisa F.</div><div class="t-condition">Pollenallergie, 39 Jahre</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="bg-alt">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Häufige Fragen</span>
+      <h2 style="margin-top:12px">Alles, was du wissen möchtest</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Was ist die KSG H+ Methode genau?</summary>
+        <div class="answer"><p>KSG steht für Körper, Seele, Geist — und H+ für Höhere Gesundheit. Die Methode ist ein ganzheitliches System, das alle drei Ebenen des Menschseins adressiert. Sie basiert auf 20+ Jahren Forschung und der Begleitung tausender Menschen mit chronischen Erkrankungen.</p></div>
+      </details>
+      <details>
+        <summary>Für wen ist diese Methode geeignet?</summary>
+        <div class="answer"><p>Die KSG H+ Methode eignet sich für jeden Menschen, der dauerhaft gesund sein möchte — besonders für Menschen mit chronischen Erkrankungen wie Rheuma, Autoimmunerkrankungen, Allergien, Hauterkrankungen oder chronischer Erschöpfung, die mit konventionellen Ansätzen keine nachhaltige Lösung gefunden haben.</p></div>
+      </details>
+      <details>
+        <summary>Ersetzt die Methode meinen Arzt oder meine Medikamente?</summary>
+        <div class="answer"><p>Nein. Die KSG H+ Methode ist ein ergänzender Ansatz und ersetzt keine medizinische Behandlung. Medikamente sollten nur in Absprache mit einem Arzt verändert werden. Viele Menschen berichten jedoch, dass sie nach Anwendung der Methode gemeinsam mit ihrem Arzt Medikamente reduzieren konnten.</p></div>
+      </details>
+      <details>
+        <summary>Was ist der erste Schritt?</summary>
+        <div class="answer"><p>Der beste Einstieg ist das Buch „Dekonstruktion im Menschen". Es erklärt das vollständige Fundament der KSG H+ Methode und gibt dir alle Werkzeuge an die Hand, um direkt anzufangen.</p></div>
+      </details>
+      <details>
+        <summary>Wie schnell zeigen sich Ergebnisse?</summary>
+        <div class="answer"><p>Das ist individuell verschieden. Viele Menschen berichten von ersten spürbaren Veränderungen nach 4–8 Wochen. Tiefgreifende, dauerhafte Veränderungen entstehen meist nach 3–6 Monaten konsequenter Anwendung.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA Band ===== -->
+<section>
+  <div class="container">
+    <div class="ctaband">
+      <span class="eyebrow" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#A7F3D0">Jetzt starten</span>
+      <h2 style="margin-top:16px">Dein Körper wartet nicht.<br>Der erste Schritt liegt bei dir.</h2>
+      <p>Über 10.000 Menschen haben mit der KSG H+ Methode begonnen — und ihr Leben verändert. Das Buch ist der einfachste, direkteste Weg hinein.</p>
+      <a href="https://www.rheumafrei.de/buch/" class="btn btn--lg btn--pulse">
+        Jetzt Buch bestellen <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div>
+        <a href="/" class="logo" style="color:#fff;margin-bottom:16px;display:inline-flex">
+          <div class="mark">AS</div>
+          Andreas Sadlowski
+        </a>
+        <p style="font-size:.92rem;line-height:1.6;max-width:280px;margin-top:12px">Autor, Coach und Entwickler der KSG H+ Methode für ganzheitliche Gesundheit.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="#methode">Die Methode</a>
+        <a href="#ueber">Über mich</a>
+        <a href="#buch">Das Buch</a>
+        <a href="#testimonials">Erfahrungen</a>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <a href="/impressum/">Impressum</a>
+        <a href="/datenschutz/">Datenschutz</a>
+        <a href="/agb/">AGB</a>
+        <a href="/haftungsausschluss/">Haftungsausschluss</a>
+      </div>
+    </div>
+    <div class="small">
+      © 2025 Andreas Sadlowski · KSG H+ Methode · Alle Rechte vorbehalten<br>
+      <em>Hinweis: Die Inhalte dieser Website dienen der allgemeinen Information und ersetzen keine medizinische Beratung.</em>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Sticky Mobile CTA ===== -->
+<div class="sticky-cta">
+  <div class="price">
+    <b>„Dekonstruktion im Menschen"</b>
+    <small>Das Buch zur KSG H+ Methode</small>
+  </div>
+  <a href="https://www.rheumafrei.de/buch/" class="btn">Bestellen →</a>
+</div>
+
+<script>
+  document.querySelector('.burger').addEventListener('click', function() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  });
+
+  document.querySelectorAll('.video-embed').forEach(el => {
+    el.addEventListener('click', () => {
+      if (el.classList.contains('playing')) return;
+      const id = el.dataset.yt;
+      const f = document.createElement('iframe');
+      f.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+      f.title = el.querySelector('.vtitle')?.textContent || 'Video';
+      f.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+      f.setAttribute('allowfullscreen', '');
+      f.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3';
+      el.appendChild(f);
+      el.classList.add('playing');
+    });
+  });
+</script>
+</body>
+</html>
