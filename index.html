@@ -67,7 +67,8 @@
     /* ===== Nav Dropdown ===== */
     .nav-dropdown{position:relative;display:inline-flex;align-items:center}
     .nav-dropdown__trigger{cursor:pointer;display:inline-flex;align-items:center;gap:4px}
-    .nav-dropdown__menu{display:none;position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 32px rgba(11,31,28,.12);padding:8px;min-width:260px;z-index:200}
+    .nav-dropdown__menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 32px rgba(11,31,28,.12);padding:8px;min-width:260px;z-index:200;padding-top:18px;margin-top:-8px}
+    .nav-dropdown__menu::before{content:"";position:absolute;top:0;left:0;right:0;height:16px}
     .nav-dropdown__menu a{display:block;padding:10px 14px;border-radius:8px;color:var(--ink);font-size:.93rem;font-weight:500;text-decoration:none;white-space:nowrap}
     .nav-dropdown__menu a:hover{background:var(--teal-50);color:var(--teal-700)}
     .nav-dropdown:hover .nav-dropdown__menu{display:block}
@@ -469,6 +470,12 @@
 <script>
   document.querySelector('.burger').addEventListener('click', function() {
     document.getElementById('mobileNav').classList.toggle('open');
+  });
+
+  document.querySelectorAll('#mobileNav a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('mobileNav').classList.remove('open');
+    });
   });
 
   document.querySelectorAll('.video-embed').forEach(el => {
