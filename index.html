@@ -64,6 +64,14 @@
     .video-embed .vtitle{position:absolute;left:18px;right:18px;bottom:16px;color:#fff;font-weight:600;text-shadow:0 1px 6px rgba(0,0,0,.55);z-index:2}
     .video-embed.playing .vthumb,.video-embed.playing .vplay,.video-embed.playing .vtitle{opacity:0;pointer-events:none}
 
+    /* ===== Nav Dropdown ===== */
+    .nav-dropdown{position:relative;display:inline-flex;align-items:center}
+    .nav-dropdown__trigger{cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+    .nav-dropdown__menu{display:none;position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 32px rgba(11,31,28,.12);padding:8px;min-width:260px;z-index:200}
+    .nav-dropdown__menu a{display:block;padding:10px 14px;border-radius:8px;color:var(--ink);font-size:.93rem;font-weight:500;text-decoration:none;white-space:nowrap}
+    .nav-dropdown__menu a:hover{background:var(--teal-50);color:var(--teal-700)}
+    .nav-dropdown:hover .nav-dropdown__menu{display:block}
+
     /* ===== CTA band ===== */
     .ctaband{background:var(--bg-3);color:#fff;border-radius:var(--radius-lg);padding:52px 48px;text-align:center}
     .ctaband h2{color:#fff;margin-bottom:12px}
@@ -88,7 +96,13 @@
       <nav class="nav">
         <a href="#methode">Die Methode</a>
         <a href="#ueber">Über mich</a>
-        <a href="#buch">Das Buch</a>
+        <div class="nav-dropdown">
+          <a href="#buch" class="nav-dropdown__trigger">Bücher <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:middle;margin-left:2px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="nav-dropdown__menu">
+            <a href="#buch-1">Dekonstruktion im Menschen</a>
+            <a href="#buch-2">Die Gesetze der wahren Wunscherfüllung</a>
+          </div>
+        </div>
         <a href="#testimonials">Erfahrungen</a>
       </nav>
       <button class="burger" aria-label="Menü öffnen">
@@ -99,9 +113,10 @@
   <nav class="mobile-nav" id="mobileNav">
     <a href="#methode">Die Methode</a>
     <a href="#ueber">Über mich</a>
-    <a href="#buch">Das Buch</a>
+    <a href="#buch-1" onclick="document.getElementById('mobileNav').classList.remove('open')">↳ Dekonstruktion im Menschen</a>
+    <a href="#buch-2" onclick="document.getElementById('mobileNav').classList.remove('open')">↳ Die Gesetze der Wunscherfüllung</a>
     <a href="#testimonials">Erfahrungen</a>
-    <a href="#buch" class="btn btn--teal" style="margin-top:8px">Buch bestellen</a>
+    <a href="#buch" class="btn btn--teal" style="margin-top:8px">Bücher entdecken</a>
   </nav>
 </header>
 
@@ -241,15 +256,20 @@
   </div>
 </section>
 
-<!-- ===== Buch ===== -->
+<!-- ===== Bücher ===== -->
 <section id="buch" class="bg-alt">
   <div class="container">
-    <div class="bookpromo">
+    <div class="section-title" style="margin-bottom:52px">
+      <span class="eyebrow">Meine Bücher</span>
+      <h2 style="margin-top:8px">Wissen, das Leben verändert</h2>
+    </div>
+
+    <div id="buch-1" class="bookpromo" style="margin-bottom:64px;padding-bottom:64px;border-bottom:1px solid var(--line)">
       <div class="shot">
         <img src="assets/img/buch-cover.png" alt="Buch: Dekonstruktion im Menschen von Andreas Sadlowski" style="width:min(280px,80%);transform:rotate(-2deg);filter:drop-shadow(0 24px 48px rgba(11,31,28,.24))">
       </div>
       <div>
-        <span class="eyebrow">Das Buch</span>
+        <span class="eyebrow">Buch 1</span>
         <h2 style="margin-top:12px">„Dekonstruktion im Menschen"</h2>
         <p style="color:var(--muted);font-size:1.08rem;margin-top:12px">Das Standardwerk zur KSG H+ Methode. Andreas Sadlowski erklärt darin erstmals vollständig, wie Körper, Seele und Geist zusammenspielen — und wie jeder Mensch dieses System für sich nutzen kann.</p>
         <ul class="includes">
@@ -261,11 +281,34 @@
         </ul>
         <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
           <a href="https://www.rheumafrei.de/buch/" class="btn btn--lg">
-            Jetzt Buch bestellen <span class="arrow">→</span>
+            Jetzt bestellen <span class="arrow">→</span>
           </a>
         </div>
       </div>
     </div>
+
+    <div id="buch-2" class="bookpromo">
+      <div class="shot">
+        <div class="ph">Die Gesetze der wahren<br>Wunscherfüllung</div>
+      </div>
+      <div>
+        <span class="eyebrow">Buch 2</span>
+        <h2 style="margin-top:12px">„Die Gesetze der wahren Wunscherfüllung"</h2>
+        <p style="color:var(--muted);font-size:1.08rem;margin-top:12px">Eine Reise jenseits von Murphy — in die Tiefe des Unterbewusstseins. Andreas Sadlowski zeigt, wie echte Wunscherfüllung funktioniert: ehrlich, ermutigend und lebensverändernd.</p>
+        <ul class="includes">
+          <li><div class="check">✓</div><span>Die Kraft des Unterbewusstseins verstehen und nutzen</span></li>
+          <li><div class="check">✓</div><span>Warum Wünsche scheitern — und wie du das änderst</span></li>
+          <li><div class="check">✓</div><span>Die wahren Gesetze hinter Manifestation & Erfolg</span></li>
+          <li><div class="check">✓</div><span>Praktische Übungen für sofortige Veränderung</span></li>
+        </ul>
+        <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+          <a href="/wunscherfuellung" class="btn btn--lg">
+            Mehr erfahren <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
